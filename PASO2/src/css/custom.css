@@ -1,0 +1,287 @@
+/********** FONTS **********/
+@font-face {
+  font-family: "Montserrat";
+  src: url("../assets/fonts/Montserrat-Medium.ttf") format("truetype");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../assets/fonts/Montserrat-SemiBold.ttf") format("truetype");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../assets/fonts/Montserrat-Bold.ttf") format("truetype");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../assets/fonts/Montserrat-ExtraBold.ttf") format("truetype");
+  font-weight: 900;
+}
+
+/********** GLOBAL STYLES **********/
+:root {
+  --pink-diamond: #e673fc;
+  --deep-space: #292544;
+  --glow-effect: drop-shadow(0 0 0.55rem rgb(229, 115, 252))
+    drop-shadow(0 0 0.55rem rgb(229, 115, 252));
+  --svg-white-to-pink: brightness(0) saturate(100%) invert(76%) sepia(67%)
+    saturate(5263%) hue-rotate(235deg) brightness(100%) contrast(110%);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-image: url("../assets/img/SPA.jpg");
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+  font-family: "Montserrat", sans-serif;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+h1 {
+  font-weight: 900;
+}
+
+h2 {
+  font-weight: 700;
+}
+
+/********** TEXT COLORS **********/
+.color-pink-diamond {
+  color: var(--pink-diamond);
+}
+
+.color-deep-space {
+  color: var(--deep-space);
+}
+
+.color-svg-white-to-pink {
+  filter: var(--svg-white-to-pink);
+}
+
+/********** BACKGROUND COLORS **********/
+.bg-pink-diamond {
+  background-color: var(--pink-diamond);
+}
+.bg-deep-space {
+  background-color: var(--deep-space);
+}
+
+.bg-degradado {
+  background: linear-gradient(
+    to bottom,
+    rgba(41, 37, 68, 1) 0%,
+    rgba(41, 37, 68, 0.95) 45%,
+    rgba(41, 37, 68, 0.9) 55%,
+    rgba(41, 37, 68, 0.85) 65%,
+    rgba(41, 37, 68, 0.8) 70%,
+    rgba(41, 37, 68, 0) 100%
+  );
+}
+
+.bg-glassmorphism {
+  background: rgba(41, 37, 68, 0.4) !important;
+  backdrop-filter: blur(40px);
+  -webkit-backdrop-filter: blur(40px);
+}
+
+.bg-glassmorphism-light {
+  backdrop-filter: blur(10px) saturate(180%);
+  -webkit-backdrop-filter: blur(11px) saturate(180%);
+  background-color: rgba(255, 255, 255, 0.3);
+  border: 1px solid rgba(209, 213, 219, 0);
+}
+
+/********** CUSTOM **********/
+.fw-bolder {
+  font-weight: 900;
+}
+
+.min-vh-90 {
+  min-height: 90vh;
+}
+
+.light-on {
+  filter: var(--glow-effect);
+  transition: filter 0.2s ease-in-out;
+}
+
+.hover-light-on {
+  transition: filter 0.2s ease-in-out;
+}
+
+.hover-light-on:hover {
+  filter: var(--glow-effect);
+}
+
+.body-icons {
+  width: 70px;
+}
+
+.menu-icons {
+  width: 30px;
+}
+
+.border-radious-20 {
+  border-radius: 20px;
+}
+
+.button-white-to-pink {
+  background-color: transparent;
+  border-radius: 15px;
+  font-weight: 700;
+  border: 3px solid #fff;
+  color: #fff;
+  transition-duration: 0.3s;
+  transition-property: border-color, color, background-color, filter;
+  padding: 0.5rem 1.2rem;
+}
+
+.button-white-to-pink:hover,
+.button-white-to-pink:focus,
+.button-white-to-pink:focus-visible {
+  border-color: var(--pink-diamond);
+  color: var(--pink-diamond);
+  filter: var(--glow-effect);
+  background-color: transparent;
+  box-shadow: none;
+  outline: none;
+}
+
+.button-pink-to-white {
+  background-color: transparent;
+  border-radius: 15px;
+  font-weight: 700;
+  border: 3px solid var(--pink-diamond);
+  color: var(--pink-diamond);
+  transition-duration: 0.3s;
+  transition-property: border-color, color, background-color, filter;
+  padding: 0.5rem 1.2rem;
+}
+
+.button-pink-to-white:hover,
+.button-pink-to-white:focus,
+.button-pink-to-white:focus-visible {
+  border-color: #fff;
+  color: #fff;
+  filter: var(--glow-effect);
+  background-color: transparent;
+  box-shadow: none;
+  outline: none;
+}
+
+/********** ABOUT ME **********/
+.about-me-image-container {
+  width: 70%;
+  height: 40vh;
+}
+
+.about-me-image-container .main-image {
+  background-image: url("/src/assets/img/profile-pic.jpg");
+  background-size: cover;
+  background-position: top center;
+}
+
+.about-me-image-container .main-image-frame {
+  border: 5px solid #fff;
+  outline-offset: -4px;
+  position: relative;
+  transform: translate(10%, -90%);
+  z-index: -1;
+}
+
+#me h1 {
+  height: 8rem;
+}
+
+/********** HEADER **********/
+.modal-menu-mobile {
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.modal-menu-mobile-active {
+  visibility: visible;
+  opacity: 1;
+  transition: all 0.3s ease-in-out;
+}
+
+/********** PROJECTS **********/
+.immersive-card-background {
+  width: 200%;
+  transform: translateX(-25%) translateY(-10%);
+  opacity: 0.9;
+  filter: blur(25px);
+}
+
+.immersive-card-gradient {
+  background: linear-gradient(
+    to bottom,
+    rgba(41, 37, 68, 0.4) 20%,
+    rgba(41, 37, 68, 0.5) 40%,
+    rgba(41, 37, 68, 0.9) 100%
+  );
+}
+
+.immersive-card-content img {
+  height: 25vh;
+  box-shadow: 0 0 30px 0px rgba(0, 0, 0, 0.3);
+}
+
+/********** CONTACT **********/
+.contact-form {
+  border-radius: 20px;
+}
+
+.contact-form .form-floating > .form-control-plaintext ~ label::after,
+.form-floating > .form-control:focus ~ label::after,
+.form-floating > .form-control:not(:placeholder-shown) ~ label::after,
+.form-floating > .form-select ~ label::after {
+  background-color: transparent;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: var(--pink-diamond);
+  box-shadow: none;
+  color: #fff;
+}
+
+.contact-form input:hover,
+.contact-form textarea:hover {
+  border-color: #fff;
+  color: #fff;
+  transition: border-color 0.3s ease-in-out, color 0.3s ease-in-out,
+    background-color 0.3s ease-in-out, filter 0.3s ease-in-out;
+}
+
+.contact-form input:hover,
+.contact-form textarea:hover {
+  border-color: var(--pink-diamond);
+  color: var(--pink-diamond);
+  filter: var(--glow-effect);
+  background-color: transparent;
+}
+
+/********** RESPONSIVE **********/
+@media (max-width: 768px) {
+  .body-icons {
+    width: 50px;
+  }
+
+  #me h1 {
+    height: 6rem;
+  }
+}
