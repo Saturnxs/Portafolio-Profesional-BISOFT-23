@@ -9,7 +9,7 @@ Para ejecutar el proyecto es necesario instalar [NodeJS](https://nodejs.org/dist
 Ir al directorio del proyecto
 
 ```bash
-  cd proyecto/PASO2
+  cd  Portafolio-Profesional-BISOFT-23/PASO2
 ```
 
 Instalar dependencias
