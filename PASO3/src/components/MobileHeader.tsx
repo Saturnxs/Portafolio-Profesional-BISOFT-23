@@ -1,5 +1,6 @@
 import { FaBars, FaXmark } from "react-icons/fa6";
 import { useState, useEffect } from "react";
+import ThomasLogo from "../assets/svg/thomas-logo.svg";
 
 const MobileHeader: React.FC = () => {
     const [show, setShow] = useState(!false);
@@ -14,7 +15,7 @@ const MobileHeader: React.FC = () => {
                 <div className="row d-flex flex-column justify-content-around align-items-center h-100">
                     <div className="col-12 text-center">
                         <a href="/">
-                            <img alt='Home' src='src\assets\svg\thomas-logo.svg' className="body-icons light-on" />
+                            <img alt='Home' src={ThomasLogo} className="body-icons light-on" />
                         </a>
                     </div>
                     <div className="col-12 d-flex flex-column justify-content-center align-items-center fs-5 fw-bold">
@@ -44,7 +45,7 @@ const MobileHeader: React.FC = () => {
                     <div className="row">
                         <div className="col-12 d-flex justify-content-between align-items-center">
                             <a href="/" className={`${!show ? "modal-menu-mobile" : "modal-menu-mobile-active"}`}>
-                                <img alt='Home' src='src\assets\svg\thomas-logo.svg' className="body-icons light-on" />
+                                <img alt='Home' src={ThomasLogo} className="body-icons light-on" />
                             </a>
                             {show ? <FaBars className="fa-solid fa-bars fs-2 color-pink-diamond" onClick={() => setShow(!show)} /> : <FaXmark className="fa-solid fa-close fs-2 color-pink-diamond" onClick={() => setShow(!show)} />}
                         </div>

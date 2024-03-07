@@ -1,4 +1,7 @@
 import { ReactTyped } from "react-typed";
+import SaturnIcon from "../assets/svg/saturn-icon.svg";
+import CenfoLogo from "../assets/img/cenfo-logo.png";
+import PicoEGalloLogo from "../assets/img/pg-logo.png";
 
 const AboutMe: React.FC = () => {
     return (
@@ -7,7 +10,7 @@ const AboutMe: React.FC = () => {
                 <div>
                     <h2>
                         Hi!
-                        <span className="px-3 align-bottom"><img src='src\assets\svg\saturn-icon.svg' className="body-icons light-on" /></span>
+                        <span className="px-3 align-bottom"><img src={SaturnIcon} className="body-icons light-on" /></span>
                         My name is Thomas!
                     </h2>
                 </div>
@@ -49,13 +52,13 @@ const AboutMe: React.FC = () => {
                     <div className="col-md-5 text-center pt-5 pt-md-0">
                         <a href="https://www.ucenfotec.ac.cr/" target="_blank" className="text-decoration-none">
                             <h5 className="m-0 fw-bold text-white d-md-none d-block pb-4">Embracing <span className="color-pink-diamond">excellence</span> at</h5>
-                            <img src='src\assets\img\cenfo-logo.png' className="w-75 px-0 px-md-5" />
+                            <img src={CenfoLogo} className="w-75 px-0 px-md-5" />
                         </a>
                     </div>
                     <div className="col-md-5 text-center pt-5 pt-md-0">
                         <a href="https://picoegallo.com/" target="_blank" className="text-decoration-none">
                             <h5 className="m-0 fw-bold text-white d-md-none d-block pb-4">Challenging <span className="color-pink-diamond">expectations</span> at</h5>
-                            <img src='src\assets\img\pg-logo.png' className="w-75 px-0 px-md-5" />
+                            <img src={PicoEGalloLogo} className="w-75 px-0 px-md-5" />
                         </a>
                     </div>
                 </div>

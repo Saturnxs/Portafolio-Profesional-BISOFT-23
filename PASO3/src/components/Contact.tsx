@@ -1,4 +1,5 @@
 import TitlePlanet from "./TitlePlanet"
+import EarthIcon from "../assets/svg/earth-icon.svg"
 
 const Contact: React.FC = () => {
     return (
@@ -7,7 +8,7 @@ const Contact: React.FC = () => {
                 <div className="row py-5 justify-content-center">
                     <div className="col-md-5 col-12">
                         <TitlePlanet
-                            imgRoute="src\assets\svg\earth-icon.svg"
+                            imgRoute={EarthIcon}
                             title="contact" />
                         <p className="text-white text-center">Check out my <span className="fw-bold color-pink-diamond">contact information</span> and <span className="fw-bold color-pink-diamond">social media</span>, feel free to get in touch with me!</p>
                     </div>

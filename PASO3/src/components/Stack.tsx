@@ -1,4 +1,5 @@
 import TitlePlanet from "./TitlePlanet"
+import JupiterIcon from "../assets/svg/jupiter-icon.svg"
 import { SiTypescript, SiJavascript, SiBootstrap, SiReact, SiPython, SiNodedotjs, SiAmazonaws, SiWordpress, SiGooglecolab, SiOpencv, SiTensorflow, SiFigma, SiNotion, SiDiagramsdotnet, SiGit, SiGithub, SiAdobeillustrator } from "react-icons/si";
 import { DiMysql, DiMsqlServer } from "react-icons/di";
 
@@ -9,7 +10,7 @@ const Stack: React.FC = () => {
                 <div className="row py-5 justify-content-center">
                     <div className="col-md-5 col-12">
                         <TitlePlanet
-                            imgRoute="src\assets\svg\jupiter-icon.svg"
+                            imgRoute={JupiterIcon}
                             title="stack" />
                         <p className="text-white text-center">Some technologies and tools I use in my day by day to <span className="fw-bold color-pink-diamond">code</span>, <span className="fw-bold color-pink-diamond">design</span>, and <span className="fw-bold color-pink-diamond">create</span>.</p>
                     </div>
