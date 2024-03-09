@@ -31,6 +31,7 @@
     drop-shadow(0 0 0.55rem rgb(229, 115, 252));
   --svg-white-to-pink: brightness(0) saturate(100%) invert(76%) sepia(67%)
     saturate(5263%) hue-rotate(235deg) brightness(100%) contrast(110%);
+  background-color: var(--deep-space);
 }
 
 html {
@@ -43,10 +44,6 @@ body {
   background-position: top center;
   background-repeat: no-repeat;
   font-family: "Montserrat", sans-serif;
-}
-
-body::-webkit-scrollbar {
-  display: none;
 }
 
 h1 {
@@ -240,6 +237,15 @@ h2 {
   box-shadow: 0 0 30px 0px rgba(0, 0, 0, 0.3);
 }
 
+.project-card {
+  transition: all 0.3s ease-in-out;
+}
+
+.project-card:hover {
+  padding: 0 !important;
+  cursor: pointer;
+}
+
 /********** CONTACT **********/
 .contact-form {
   border-radius: 20px;
@@ -273,6 +279,14 @@ h2 {
   color: var(--pink-diamond);
   filter: var(--glow-effect);
   background-color: transparent;
+}
+
+.contact-form .alert-message {
+  transition: all 0.3s ease-in-out;
+}
+
+.contact-form .alert-message svg {
+  cursor: pointer;
 }
 
 /********** RESPONSIVE **********/

@@ -1,8 +1,11 @@
 import { FaBars, FaXmark } from "react-icons/fa6";
 import { useState, useEffect } from "react";
 import ThomasLogo from "../assets/svg/thomas-logo.svg";
+import { useTranslation } from 'react-i18next';
 
 const MobileHeader: React.FC = () => {
+    const [t, i18n] = useTranslation();
+
     const [show, setShow] = useState(!false);
 
     useEffect(() => {
@@ -11,7 +14,7 @@ const MobileHeader: React.FC = () => {
 
     return (
         <>
-            <div className={`container-fluid bg-glassmorphism position-fixed z-2 p-5 h-100 ${show ? "modal-menu-mobile" : "modal-menu-mobile-active"}`}>
+            <div className={`container-fluid bg-glassmorphism position-fixed z-2 p-5 h-100 d-md-none ${show ? "modal-menu-mobile" : "modal-menu-mobile-active"}`}>
                 <div className="row d-flex flex-column justify-content-around align-items-center h-100">
                     <div className="col-12 text-center">
                         <a href="/">
@@ -20,27 +23,27 @@ const MobileHeader: React.FC = () => {
                     </div>
                     <div className="col-12 d-flex flex-column justify-content-center align-items-center fs-5 fw-bold">
                         <a href="#me" className="py-2 text-decoration-none text-white light-on" onClick={() => setShow(!show)}>
-                            About
+                            {t("navbar.about")}
                         </a>
                         <a href="#stack" className="py-2 text-decoration-none text-white light-on" onClick={() => setShow(!show)}>
-                            Stack
+                            {t("navbar.stack")}
                         </a>
                         <a href="#projects" className="py-2 text-decoration-none text-white light-on" onClick={() => setShow(!show)}>
-                            Projects
+                            {t("navbar.projects")}
                         </a>
                         <a href="#contact" className="py-2 text-decoration-none text-white light-on" onClick={() => setShow(!show)}>
-                            Contact
+                            {t("navbar.contact")}
                         </a>
                     </div>
                     <div className="col-12 d-flex justify-content-center">
-                        <button className="button-white-to-pink" type="button">
-                            es
+                        <button className="button-white-to-pink" type="button" onClick={() => { i18n.changeLanguage(i18n.language === 'en' ? 'es' : 'en'); setShow(!show) }}>
+                            {i18n.language === 'en' ? 'es' : 'en'}
                         </button>
                     </div>
                 </div>
             </div >
 
-            <nav className="navbar-fixed-top p-4 position-fixed w-100 bg-degradado z-2">
+            <nav className="navbar-fixed-top p-4 position-fixed w-100 bg-degradado z-2 d-md-none">
                 <div className="container-fluid">
                     <div className="row">
                         <div className="col-12 d-flex justify-content-between align-items-center">

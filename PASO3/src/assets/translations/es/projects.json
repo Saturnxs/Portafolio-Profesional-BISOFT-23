@@ -1,0 +1,46 @@
+{
+    "isaac": {
+        "subtitle": "Proyecto de Clasificación de Animales",
+        "short-description": "Un proyecto de visión por computadora para clasificar animales capturados en trampas fotográficas."
+    },
+    "cenfoteco": {
+        "subtitle": "Proyecto de Juego Estratégico",
+        "short-description": "Videojuego desarrollado para el curso de Programación de Patrones en la Universidad Cenfotec."
+    },
+    "horus": {
+        "subtitle": "Proyecto de Reconocimiento de Placas Vehiculares",
+        "short-description": "Proyecto de detección de objetos para reconocer placas de matrícula en vehículos costarricenses."
+    },
+    "mobydyg-1": {
+        "subtitle": "Portal Web de Comercio Electrónico",
+        "short-description": "Módulo de usuario para una startup costarricense de comercio electrónico."
+    },
+    "mobydyg-2": {
+        "subtitle": "Rediseño de Base de Datos para Comercio Electrónico",
+        "short-description": "Rediseño de base de datos para una startup costarricense de comercio electrónico."
+    },
+    "brand-book": {
+        "subtitle": "Proyecto de Marca Personal",
+        "short-description": "Descubre mi libro de marca personal y el trabajo detrás de él."
+    },
+    "crafting-to-dos": {
+        "subtitle": "Proyecto de Frontend con React",
+        "short-description": "Desarrollado con React y JavaScript (JSX) para organizar tus tareas."
+    },
+    "tournament-app": {
+        "subtitle": "Proyecto de 3Pillar Global",
+        "short-description": "Una aplicación web para la gestión de torneos para la Federación Costarricense de Taekwondo."
+    },
+    "atlas": {
+        "subtitle": "Proyecto de Graduación de Secundaria",
+        "short-description": "Una aplicación web para workaholics para gestionar su tiempo y tareas durante el confinamiento por COVID-19."
+    },
+    "skem-club": {
+        "subtitle": "Proyecto de SkemClub",
+        "short-description": "Campaña de reactivación para SKEM Club, el primer club de innovación de secundaria en Costa Rica."
+    },
+    "wonder": {
+        "subtitle": "Proyecto Ganador de Expotec",
+        "short-description": "Videojuego y página web con el objetivo de educar a los niños sobre problemas sociales, globales y ambientales."
+    }    
+}
