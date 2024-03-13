@@ -1,0 +1,78 @@
+{
+    "navbar":{
+        "about":"about me",
+        "stack":"stack",
+        "projects":"projects",
+        "contact":"contact"
+    },
+    "about-me":{
+        "hi":"Hi!",
+        "name":"My name is Thomas",
+        "im":"I'm",
+        "typed-strings": [
+            "a Fullstack Developer",
+            "a Freelancer",
+            "a Web Developer",
+            "an Excellence Student",
+            "a Machine Learning Enthusiast"
+        ],
+        "description-1": "As a <pink>developer</pink>, I build applications mainly oriented towards web services using technologies such as Bootstrap and React. As a <pink>professional</pink>, I encourage excellence through good practices and continuous improvement, considering myself a person with high attention to detail and taking care of the craftsmanship in anything <pink>coded</pink>, <pink>designed</pink>, and <pink>produced</pink> by me.",
+        "description-2": "And as a <pink>human</pink>, I believe that social change can be achieved by spreading science and education, with technology being the key to success on this path.",
+        "excellence": "Embracing <pink>excellence</pink> at",
+        "expectations": "Challenging <pink>expectations</pink> at"
+    },
+    "stack":{
+        "intro": "Some technologies and tools I use in my day by day to <pink>code</pink>, <pink>design</pink>, and <pink>create</pink>.",
+        "frontend": "Frontend",
+        "backend": "Backend",
+        "database": "Database",
+        "ml": "ML & Computer Vision",
+        "cloud": "Cloud & CMS",
+        "version": "Version Control",
+        "design": "Design & Prototyping"
+    },
+    "projects":{
+        "intro": "Some <pink>code</pink>, <pink>design</pink> and <pink>production</pink> projects in which I've been involved. <pink>Click</pink> on them to learn more!",
+        "button": "show more",
+        "button-close": "close all"
+    },
+    "contact":{
+        "intro": "Check out my <pink>contact information</pink> and <pink>social media</pink, feel free to get in touch with me!",
+        "contact-info": {
+            "github":{
+                "title":"Check out my code in Github"
+            },
+            "linkedin":{
+                "title":"Let's connect in LinkedIn!"
+            },
+            "email":{
+                "title":"Need help with a project?",
+                "mobile-variant":"Send me an email!"
+            },
+            "whatsapp":{
+                "title":"Want to say hi?"
+            },
+            "cv":{
+                "title":"Looking for my CV?",
+                "url":"Download it here!"
+            }
+        },
+        "contact-form": {
+            "name": "What's your name?",
+            "email": "What's your email?",
+            "subject": "What's in your mind?",
+            "message": "Tell me more about it...",
+            "submit": "send me a message",
+            "alerts": {
+                "success": "I've received your message, I'll get back to you soon!",
+                "error": "There was an error sending your message, please try again later!",
+                "empty": "Please fill all the fields!", 
+                "invalid-email": "Please enter a valid email!"
+            }
+        }
+    },
+    "footer":{
+        "crafted-1": "Crafted with",
+        "crafted-2": "by <github>@Saturnxs</github>"
+    }
+}

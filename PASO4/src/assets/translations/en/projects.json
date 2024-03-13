@@ -1,0 +1,46 @@
+{
+    "isaac": {
+        "subtitle": "Animal Classification Project",
+        "short-description": "A computer vision project to classify animals captured in camera traps."
+    },
+    "cenfoteco": {
+        "subtitle": "Estrategic Game Project",
+        "short-description": "Video game developed for the Programing Patterns course at Cenfotec University."
+    },
+    "horus":{
+        "subtitle": "License Plate Recognition Project",
+        "short-description": "An object detection project to recognize license plates in Costa Rican vehicles."
+    },
+    "mobydyg-1": {
+        "subtitle": "E-commerce Web Portal",
+        "short-description": "User module for an e-commerce costarican startup."
+    },
+    "mobydyg-2": {
+        "subtitle": "E-commerce Database Redesign",
+        "short-description": "Database redesign for an e-commerce costarican startup."
+    },
+    "brand-book":{
+        "subtitle": "Personal Branding Project",
+        "short-description": "Discover my personal brand book and the work behind it."
+    },
+    "crafting-to-dos":{
+        "subtitle": "A React Front End Project",
+        "short-description": "Developed with React and JavaScript (JSX) to organize your tasks."
+    },
+    "tournament-app":{
+        "subtitle": "A 3Pillar Global Project",
+        "short-description": "A web app for the Costa Rican Taekwondo Federation to manage their tournaments."
+    },
+    "atlas":{
+        "subtitle": "High School Graduation Project",
+        "short-description": "A web app for workaholics to manage their time and tasks during COVID-19 lockdown."
+    },
+    "skem-club":{
+        "subtitle": "A SkemClub Project",
+        "short-description": "Reactivation campaign for SKEM Club, Costa Rica's first high school innovation club."
+    },
+    "wonder":{
+        "subtitle": "Expotec Winning Project",
+        "short-description": "Video game and webpage with the goal of educating children about social, global and environmental problems."
+    }
+}
