@@ -19,6 +19,9 @@ import App from './App.tsx'
 import Footer from './components/Footer.tsx'
 import MobileHeader from './components/MobileHeader.tsx'
 import TopNavBar from './components/TopNavbar.tsx'
+import ScrollToTop from 'react-scroll-to-top'
+import { IoMdRocket } from "react-icons/io";
+
 
 AOS.init()
 
@@ -30,6 +33,7 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
       <MobileHeader />
       <App />
       <Footer />
+      <ScrollToTop smooth component={<IoMdRocket className='text-white' size={30} />} className="hover-light-on" />
     </I18nextProvider>
   </React.StrictMode>
 )

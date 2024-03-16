@@ -389,7 +389,7 @@ const ProjectsList: () => IProject[] = () => {
                     icon: FaRegFilePdf,
                     title: "Click here to read full documentation!",
                     text: "Atlas - Documentación.pdf",
-                    url: "static/doc/Atlas - Documentación.pdf" // TODO: Add the file to the project
+                    url: "static/doc/Atlas - Documentación.pdf"
                 }
             ]
         },

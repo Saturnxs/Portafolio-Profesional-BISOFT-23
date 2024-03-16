@@ -37,7 +37,7 @@ const ProjectModal: React.FC<IProjectModal> = ({ title, subtitle, year, stack, d
         rewind: true,
         pagination: false,
         isNavigation: true,
-        focus: 'center',
+        focus: 'center', // TODO: Check why this triggers a warning even though it's a valid option
         type: 'loop',
         breakpoints: {
             768: {
@@ -68,7 +68,7 @@ const ProjectModal: React.FC<IProjectModal> = ({ title, subtitle, year, stack, d
             <div className="row px-md-4 p-4 align-items-center justify-content-between z-3 sticky-top">
                 {/* <div className="col-1">
                         <img src={`src/assets/projects/${data.folderName}/icono.png`} className="w-75" /> TODO: Add icons
-                    </div> */}
+                    </div> // TODO: Add icons */}
                 <div className="col-9">
                     <h2 className="fw-bold">{title}</h2>
                     <p className="m-0">{subtitle} - {year}</p>
