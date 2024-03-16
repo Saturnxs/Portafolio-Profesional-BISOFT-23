@@ -54,6 +54,33 @@ h2 {
   font-weight: 700;
 }
 
+.sticky-top {
+  background: none;
+  transition: background 0.3s ease-in-out;
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--pink-diamond) transparent; /* Color de la barra */
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--pink-diamond);
+  border-radius: 10px; /* Extremos redondeados */
+}
+
+::-webkit-scrollbar-button {
+  display: none;
+}
+
 /********** TEXT COLORS **********/
 .color-pink-diamond {
   color: var(--pink-diamond);
@@ -71,6 +98,7 @@ h2 {
 .bg-pink-diamond {
   background-color: var(--pink-diamond);
 }
+
 .bg-deep-space {
   background-color: var(--deep-space);
 }
@@ -200,14 +228,6 @@ h2 {
   height: 8rem;
 }
 
-.imgs-inicio img {
-  transition: all 0.3s ease-in-out;
-}
-
-.imgs-inicio img:hover {
-  width: 100%;
-}
-
 /********** HEADER **********/
 .modal-menu-mobile {
   visibility: hidden;
@@ -250,6 +270,71 @@ h2 {
 .project-card:hover {
   padding: 0 !important;
   cursor: pointer;
+}
+
+/********** PROJECTS MODAL **********/
+.modal-project {
+  min-height: 100vh;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+.modal-project .info-div {
+  height: 73vh;
+  overflow-y: auto;
+}
+
+@media screen and (max-width: 768px) {
+  .modal-project {
+    overflow-y: auto;
+    height: 100%;
+  }
+
+  .modal-project .info-div {
+    overflow-y: hidden;
+    height: 100%;
+  }
+}
+
+.image-gallery-main-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+#thumbnails-modal-splide .splide__slide {
+  border: none !important;
+  opacity: 0.3;
+}
+
+#thumbnails-modal-splide .splide__slide.is-active {
+  opacity: 1;
+  transition: all 0.2s ease-in-out;
+}
+
+#thumbnails-modal-splide .splide__arrow {
+  background-color: transparent;
+  transition: all 0.3s ease-in-out;
+  height: 100%;
+  width: 2.5rem;
+}
+
+#thumbnails-modal-splide .splide__arrow:hover {
+  filter: var(--glow-effect);
+}
+
+#thumbnails-modal-splide .splide__arrow svg {
+  width: 100%;
+  height: 100%;
+  fill: var(--pink-diamond) !important;
+}
+
+.image-gallery-thumbnails {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
 }
 
 /********** CONTACT **********/

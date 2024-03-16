@@ -9,7 +9,7 @@ const TopNavBar: React.FC = () => {
     const [t, i18n] = useTranslation();
 
     return (
-        <div className="container-fluid position-fixed py-2 bg-degradado z-3 d-none d-md-block">
+        <div className="container-fluid sticky-top py-2 z-3 d-none d-md-block">
             <div className="row justify-content-start align-items-center p-2">
                 <div className="col-1 text-center">
                     <a href="/">

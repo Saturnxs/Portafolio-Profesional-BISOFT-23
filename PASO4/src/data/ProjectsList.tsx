@@ -3,7 +3,8 @@ import { DiMysql, DiMsqlServer } from "react-icons/di";
 import { SiJavascript, SiReact, SiGithub, SiNodedotjs, SiExpress, SiAdobeillustrator, SiAdobepremierepro, SiDiagramsdotnet, SiFigma, SiHtml5, SiCss3, SiInstagram, SiPython, SiAmazonaws, SiGooglecolab, SiOpencv, SiTensorflow, SiYolo, SiCsharp, SiAngular, SiTypescript, SiFlask } from "react-icons/si";
 import { FaRegFilePdf, FaJava } from "react-icons/fa";
 import { BiGlobe } from "react-icons/bi";
-import { useTranslation } from "react-i18next";
+import { FaBookAtlas } from "react-icons/fa6";
+import { Trans, useTranslation } from "react-i18next";
 
 // ISAAC
 import IsaacBanner from "../assets/projects/isaac/banner.jpg";
@@ -34,6 +35,13 @@ import SkemClubBanner from "../assets/projects/skemclub/banner.jpg";
 
 // Wonder
 import WonderBanner from "../assets/projects/wonder/banner.jpg";
+import Wonder1 from "../assets/projects/wonder/1.jpg";
+import Wonder2 from "../assets/projects/wonder/2.jpg";
+import Wonder3 from "../assets/projects/wonder/3.jpg";
+import Wonder4 from "../assets/projects/wonder/4.jpg";
+import Wonder5 from "../assets/projects/wonder/5.jpg";
+import Wonder6 from "../assets/projects/wonder/6.jpg";
+import Wonder7 from "../assets/projects/wonder/7.jpg";
 
 const ProjectsList: () => IProject[] = () => {
     const { t } = useTranslation("projects");
@@ -42,7 +50,6 @@ const ProjectsList: () => IProject[] = () => {
         {
             title: "ISAAC",
             subtitle: t("isaac.subtitle"),
-            banner: IsaacBanner,
             icon: "",
             year: "2023",
             stack: [
@@ -84,13 +91,14 @@ const ProjectsList: () => IProject[] = () => {
                 <>
                 </>
             ),
-            images: [],
+            images: [
+                IsaacBanner
+            ],
             links: []
         },
         {
             title: "Cenfoteco Kingdoms",
             subtitle: t("cenfoteco.subtitle"),
-            banner: CenfotecoKingdomsBanner,
             icon: "",
             year: "2023",
             stack: [
@@ -108,13 +116,14 @@ const ProjectsList: () => IProject[] = () => {
                 <>
                 </>
             ),
-            images: [],
+            images: [
+                CenfotecoKingdomsBanner
+            ],
             links: []
         },
         {
             title: "Horus",
             subtitle: t("horus.subtitle"),
-            banner: HorusBanner,
             icon: "",
             year: "2022",
             stack: [
@@ -148,13 +157,14 @@ const ProjectsList: () => IProject[] = () => {
                 <>
                 </>
             ),
-            images: [],
+            images: [
+                HorusBanner
+            ],
             links: []
         },
         {
             title: "MobyDyg",
             subtitle: t("mobydyg-1.subtitle"),
-            banner: MobyDygBanner,
             icon: "",
             year: "2022",
             stack: [
@@ -187,13 +197,14 @@ const ProjectsList: () => IProject[] = () => {
             description: (
                 <></>
             ),
-            images: [],
+            images: [
+                MobyDygBanner
+            ],
             links: []
         },
         {
             title: "MobyDyg",
             subtitle: t("mobydyg-2.subtitle"),
-            banner: MobyDygBanner,
             icon: "",
             year: "2022",
             stack: [
@@ -218,13 +229,14 @@ const ProjectsList: () => IProject[] = () => {
             description: (
                 <></>
             ),
-            images: [],
+            images: [
+                MobyDygBanner
+            ],
             links: []
         },
         {
             title: "Contents Brand Book",
             subtitle: t("brand-book.subtitle"),
-            banner: ContentsBrandBookBanner,
             icon: "",
             year: "2022",
             stack: [
@@ -239,13 +251,14 @@ const ProjectsList: () => IProject[] = () => {
             ],
             shortDescription: t("brand-book.short-description"),
             description: (<></>),
-            images: [],
+            images: [
+                ContentsBrandBookBanner
+            ],
             links: []
         },
         {
             title: "Crafting To Do's",
             subtitle: t("crafting-to-dos.subtitle"),
-            banner: CrafToDosBanner,
             icon: "",
             year: "2022",
             stack: [
@@ -269,7 +282,9 @@ const ProjectsList: () => IProject[] = () => {
                     <p className="body-text">Crafting To Do's is an app created with React and JavaScript (JSX) that allows you to have your tasks organized. It’s a front end app, using local storage for the to-dos. Design based in my Personal Brand Book. Check it out!</p>
                 </>
             ),
-            images: [],
+            images: [
+                CrafToDosBanner
+            ],
             links: [
                 {
                     icon: BiGlobe,
@@ -288,7 +303,6 @@ const ProjectsList: () => IProject[] = () => {
         {
             title: "Tournament App System",
             subtitle: t("tournament-app.subtitle"),
-            banner: FederacionCostarricenseDeTaekwondoBanner,
             icon: "",
             year: "2021",
             stack: [
@@ -320,13 +334,14 @@ const ProjectsList: () => IProject[] = () => {
                     <p className="body-text">A web app for the Costa Rican Taekwondo Federation to manage their tournaments. It was developed with React and Node.js, using Microsoft SQL Server as the database. The app was designed with Figma and Adobe Illustrator.</p>
                 </>
             ),
-            images: [],
+            images: [
+                FederacionCostarricenseDeTaekwondoBanner
+            ],
             links: []
         },
         {
             title: "Atlas",
             subtitle: t("atlas.subtitle"),
-            banner: AtlasBanner,
             icon: "",
             year: "2021",
             stack: [
@@ -366,7 +381,9 @@ const ProjectsList: () => IProject[] = () => {
                     <p className="body-text">First application ever done with React as part of a graduation project. Atlas was a web app that allowed professionals to track workaholics while remote working during COVID-19 lockdown.</p>
                 </>
             ),
-            images: [],
+            images: [
+                AtlasBanner
+            ],
             links: [
                 {
                     icon: FaRegFilePdf,
@@ -379,19 +396,19 @@ const ProjectsList: () => IProject[] = () => {
         {
             title: "Initial Journey 2021",
             subtitle: t("skem-club.subtitle"),
-            banner: SkemClubBanner,
             icon: "",
             year: "2021",
             stack: [],
             shortDescription: t("skem-club.short-description"),
             description: (<></>),
-            images: [],
+            images: [
+                SkemClubBanner
+            ],
             links: []
         },
         {
             title: "Wonder",
             subtitle: t("wonder.subtitle"),
-            banner: WonderBanner,
             icon: "",
             year: "2019",
             stack: [
@@ -417,27 +434,23 @@ const ProjectsList: () => IProject[] = () => {
                 }
             ],
             shortDescription: t("wonder.short-description"),
-            description: (
-                <>
-                    <h2 className="subtitle">About.</h2>
-                    <p className="body-text">Winning project at the Expotec: Science, Engineering and Art fair 2019. Wonder was a video game and a webpage with the goal of educating children about social, global and environmental problems. It’s teachings are part of the Sustainable Development Goals promoted by the United Nations (UN).
-                        <br />As group project I contributed mainly to the webpage and also the art material for promoting the game in social media and the high school buildings.</p>
-                    <h2 className="subtitle">Awards.</h2>
-                    <ul>
-                        <li>Second place in Software Development at Don Bosco Professional Technical High School.</li>
-                        <li>Winner of the best project in the art category at Don Bosco Professional Technical High School.</li>
-                        <li>Special recognition in software development.</li>
-                        <li>Recognition of Isthmus of Costa Rica for a proposal to solve current problems such as global warming.</li>
-                    </ul>
-                </>
-            ),
-            images: [],
+            description: <Trans i18nKey="wonder.description" ns="projects" components={{ h3: <h3 className="fw-bold" />, p: <p />, ul: <ul />, li: <li /> }} />,
+            images: [
+                WonderBanner,
+                Wonder1,
+                Wonder2,
+                Wonder3,
+                Wonder4,
+                Wonder5,
+                Wonder6,
+                Wonder7
+            ],
             links: [
                 {
-                    icon: FaRegFilePdf,
-                    title: "Download the documentation here!",
-                    text: "Wonder - Documentation.pdf",
-                    url: "static/download/Wonder - Documentation.pdf" // TODO: Add the file to the project
+                    icon: FaBookAtlas,
+                    title: "Read the documentation online!",
+                    text: "Wonder - Documentación.pdf",
+                    url: "https://www.calameo.com/books/0060693746d1ded536ca7/"
                 },
                 {
                     icon: SiInstagram,

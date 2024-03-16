@@ -3,7 +3,6 @@ import { IconType } from "react-icons";
 interface IProject {
     title: string;
     subtitle: string;
-    banner: string;
     icon: string;
     year: string;
     stack: {

@@ -6,7 +6,7 @@ import Stack from "./components/Stack"
 function App() {
 
   return (
-    <div className="container-fluid pt-md-5 pt-4 px-4">
+    <div className="container-fluid px-4">
       <AboutMe />
       <Stack />
       <Projects />

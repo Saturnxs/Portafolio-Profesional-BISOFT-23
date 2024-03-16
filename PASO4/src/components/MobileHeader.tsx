@@ -6,10 +6,10 @@ import { useTranslation } from 'react-i18next';
 const MobileHeader: React.FC = () => {
     const [t, i18n] = useTranslation();
 
-    const [show, setShow] = useState(!false);
+    const [show, setShow] = useState(true);
 
     useEffect(() => {
-        !show ? document.body.style.overflow = 'hidden' : document.body.style.overflow = 'auto';
+        show ? document.body.style.overflow = 'auto' : document.body.style.overflow = 'hidden';
     }, [show]);
 
     return (
@@ -43,7 +43,7 @@ const MobileHeader: React.FC = () => {
                 </div>
             </div >
 
-            <nav className="navbar-fixed-top p-4 position-fixed w-100 bg-degradado z-2 d-md-none">
+            <nav className="p-4 sticky-top z-2 d-md-none">
                 <div className="container-fluid">
                     <div className="row">
                         <div className="col-12 d-flex justify-content-between align-items-center">

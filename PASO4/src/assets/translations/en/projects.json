@@ -41,6 +41,7 @@
     },
     "wonder":{
         "subtitle": "Expotec Winning Project",
-        "short-description": "Video game and webpage with the goal of educating children about social, global and environmental problems."
+        "short-description": "Video game and webpage with the goal of educating children about social, global and environmental problems.",
+        "description": "<h3>about</h3><p>Winning project at the Expotec: Science, Engineering and Art fair 2019. Wonder was a video game and a webpage with the goal of educating children about social, global and environmental problems. It's teachings are part of the Sustainable Development Goals promoted by the United Nations (UN).</p><p>As group project I contributed mainly to the webpage and also the art material for promoting the game in social media and the high school buildings.</p><h3>awards</h3><ul><li>Second place in Software Development at Don Bosco Professional Technical High School.</li><li>Winner of the best project in the art category at Don Bosco Professional Technical High School.</li><li>Special recognition in software development.</li><li>Recognition of Isthmus of Costa Rica for a proposal to solve current problems such as global warming.</li></ul>"
     }
 }

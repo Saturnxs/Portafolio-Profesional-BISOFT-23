@@ -9,7 +9,7 @@ const AboutMe: React.FC = () => {
 
     return (
         <div className="row py-5 justify-content-center align-items-center min-vh-90" id="me">
-            <div className="col-md-6 col-12 text-white pt-5 px-4" data-aos="fade-up" data-aos-duration="1000">
+            <div className="col-md-6 col-12 text-white px-4" data-aos="fade-up" data-aos-duration="1000">
                 <div>
                     <h2>
                         {t("about-me.hi")}
@@ -53,17 +53,17 @@ const AboutMe: React.FC = () => {
                         </h5>
                     </div>
                 </div>
-                <div className="row pt-5 pt-md-0 justify-content-evenly text-white align-items-center imgs-inicio">
+                <div className="row pt-5 pt-md-0 justify-content-evenly text-white align-items-center">
                     <div className="col-md-5 text-center pt-5 pt-md-0">
                         <a href="https://www.ucenfotec.ac.cr/" target="_blank" className="text-decoration-none">
                             <h5 className="m-0 fw-bold text-white d-md-none d-block pb-4">Embracing <span className="color-pink-diamond">excellence</span> at</h5>
-                            <img src={CenfoLogo} className="w-75 px-0 px-md-5" />
+                            <img src={CenfoLogo} className="w-75 px-0 px-md-5 hover-light-on" />
                         </a>
                     </div>
                     <div className="col-md-5 text-center pt-5 pt-md-0">
                         <a href="https://picoegallo.com/" target="_blank" className="text-decoration-none">
                             <h5 className="m-0 fw-bold text-white d-md-none d-block pb-4">Challenging <span className="color-pink-diamond">expectations</span> at</h5>
-                            <img src={PicoEGalloLogo} className="w-75 px-0 px-md-5" />
+                            <img src={PicoEGalloLogo} className="w-75 px-0 px-md-5 to-white-filter hover-light-on" />
                         </a>
                     </div>
                 </div>
