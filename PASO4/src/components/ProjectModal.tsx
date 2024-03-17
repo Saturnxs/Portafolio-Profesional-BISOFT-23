@@ -40,7 +40,7 @@ const ProjectModal: React.FC<IProjectModal> = ({ title, subtitle, year, stack, d
         rewind: true,
         pagination: false,
         isNavigation: true,
-        focus: 'center', // TODO: Check why this triggers a warning even though it's a valid option
+        focus: 1,
         type: 'loop',
         breakpoints: {
             768: {
