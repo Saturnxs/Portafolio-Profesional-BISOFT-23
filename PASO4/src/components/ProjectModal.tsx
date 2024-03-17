@@ -2,8 +2,9 @@ import { useRef, useEffect } from "react";
 import { IconType } from "react-icons";
 import { CgCloseO } from "react-icons/cg";
 import { Splide, SplideSlide } from '@splidejs/react-splide';
-import '@splidejs/react-splide/css';
 import { loadScrollModal } from "../utils/utils";
+import { useTranslation } from "react-i18next";
+import '@splidejs/react-splide/css';
 
 interface IProjectModal {
     title: string;
@@ -17,6 +18,8 @@ interface IProjectModal {
 }
 
 const ProjectModal: React.FC<IProjectModal> = ({ title, subtitle, year, stack, description, links, images, onClose }) => {
+    const [t] = useTranslation();
+
     const optionsMainCarousel = {
         fixedHeight: '55vh',
         fixedWidth: '100%',
@@ -84,49 +87,65 @@ const ProjectModal: React.FC<IProjectModal> = ({ title, subtitle, year, stack, d
                         {images?.map((image, index) => {
                             return (
                                 <SplideSlide key={index}>
-                                    <img src={image} className="image-gallery-main-image" alt={title} />
+                                    {image.endsWith('.mp4') ? (
+                                        <video className="image-gallery-main-image" controls>
+                                            <source src={image} type="video/mp4" />
+                                        </video>
+                                    ) : (
+                                        <img src={image} className="image-gallery-main-image" alt={title} />
+                                    )}
                                 </SplideSlide>
                             );
                         })}
                     </Splide>
                     {/* Thumbnails Carousel */}
-                    <Splide options={optionsThumbnailsCarousel} id="thumbnails-modal-splide" className="image-gallery-thumbnails-slider" ref={thumbsRef}>
-                        {images?.map((image, index) => {
-                            return (
-                                <SplideSlide key={index}>
-                                    <img src={image} className="image-gallery-thumbnails" alt={title} />
-                                </SplideSlide>
-                            );
-                        })}
-                    </Splide>
+                    {images && images.length > 1 && (
+                        <Splide options={optionsThumbnailsCarousel} id="thumbnails-modal-splide" className="image-gallery-thumbnails-slider" ref={thumbsRef}>
+                            {images.map((image, index) => {
+                                return (
+                                    <SplideSlide key={index}>
+                                        {image.endsWith('.mp4') ? (
+                                            <img src={images[0]} className="image-gallery-thumbnails" alt={title} />
+                                        ) : (
+                                            <img src={image} className="image-gallery-thumbnails" alt={title} />
+                                        )}
+                                    </SplideSlide>
+                                );
+                            })}
+                        </Splide>
+                    )}
                 </div>
                 <div className="col-md-5 ps-md-5 info-div px-4 py-5 py-md-0">
                     <div className="mb-4">
                         {description}
                     </div>
                     <div className="mb-4">
-                        <h3 className="fw-bold">stack</h3>
-                        {stack.map((stackItem) => {
-                            const Icon = stackItem.icon;
-                            return (<Icon size={40} className="mx-2 my-3" key={stackItem.name} />);
-                        })}
+                        {stack && stack.length > 0 && <>
+                            <h3 className="fw-bold">{t("projects.stack")}</h3>
+                            {stack.map((stackItem) => {
+                                const Icon = stackItem.icon;
+                                return (<Icon size={40} className="mx-2 my-3" key={stackItem.name} />);
+                            })}
+                        </>}
                     </div>
                     <div className="mb-4">
-                        <h3 className="fw-bold">explore</h3>
-                        {links && links.map((link, index) => {
-                            return (
-                                <a href={link.url} className="d-flex align-items-center text-decoration-none hover-light-on py-4" target="_blank" key={index}>
-                                    <div className="row align-items-center">
-                                        <div className="col-1 text-center text-white">
-                                            {link.icon({ size: 50 })}
+                        {links && links.length > 0 && <>
+                            <h3 className="fw-bold">{t("projects.explore")}</h3>
+                            {links?.map((link, index) => {
+                                return (
+                                    <a href={link.url} className="d-flex align-items-center text-decoration-none hover-light-on py-4" target="_blank" key={index}>
+                                        <div className="row align-items-center">
+                                            <div className="col-1 text-center text-white">
+                                                {link.icon({ size: 50 })}
+                                            </div>
+                                            <div className="col-11">
+                                                <p className="text-white m-0 ps-5">{link.title}<br /><span className="fw-bold color-pink-diamond">{link.text}</span></p>
+                                            </div>
                                         </div>
-                                        <div className="col-11">
-                                            <p className="text-white m-0 ps-5">{link.title}<br /><span className="fw-bold color-pink-diamond">{link.text}</span></p>
-                                        </div>
-                                    </div>
-                                </a>
-                            );
-                        })}
+                                    </a>
+                                );
+                            })}
+                        </>}
                     </div>
                 </div>
             </div>

@@ -24,7 +24,7 @@ const Contact: React.FC = () => {
                         </div>
                     </div>
                     <div className="row justify-content-center">
-                        {ProjectList().reverse().slice(0, loadedProjects).map((project, index) => {
+                        {ProjectList().slice(0, loadedProjects).map((project, index) => {
                             return (
                                 <ProjectCard {...project} key={index} />
                             );

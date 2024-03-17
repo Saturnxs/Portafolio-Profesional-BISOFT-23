@@ -1,47 +1,75 @@
 {
     "isaac": {
         "subtitle": "Animal Classification Project",
-        "short-description": "A computer vision project to classify animals captured in camera traps."
+        "short-description": "A computer vision project to classify animals captured in camera traps.",
+        "description": "<h3>About</h3><p>ISAAC is a project run by students from Universidad de Costa Rica, winners of the 2022 Program of Technological Innovation sponsored by Grupo AUGE-UCR</p><p>This project consists of a web application that uses machine learning to classify animals captured in camera traps. The project's main goal is to help researchers and conservationists to identify and classify animals in the wild, using a web application that allows them to upload images and get the classification results.</p><h3>Role</h3><p>Collaborated in the development of the web application's backend for camera trap image classification. My main role included generating and validating datasets with customer data, training several versions of the classification model to achieve optimal results, and developing the system's backend. The latter ranged from programming a database to building essential endpoints, exposed by APIs, such as user registration and authentication, project and photo management, and species reclassification. The system was implemented on a cloud server, prioritizing the cost benefit optimization of the server architecture.</p>",
+        "links": {
+            "news": "Click here to read more about them!",
+            "video":"Watch the project's presentation!"
+        }
     },
     "cenfoteco": {
         "subtitle": "Estrategic Game Project",
-        "short-description": "Video game developed for the Programing Patterns course at Cenfotec University."
+        "short-description": "Video game developed for the Programing Patterns course at Cenfotec University.",
+        "description": "<h3>About</h3><p>During 2022, I developed a strategic game for the Programing Patterns course at Cenfotec University. The game was developed in Java, using design patterns. The game was developed in a team and we presented it in the MakerFaire 2023 at Universidad Cenfotec.</p><h3>Role</h3><p>My main role was to develop some of the game's mechanics. I was also in charge of the game's documentation and character sprites."
     },
     "horus":{
         "subtitle": "License Plate Recognition Project",
-        "short-description": "An object detection project to recognize license plates in Costa Rican vehicles."
+        "short-description": "An object detection project to recognize license plates in Costa Rican vehicles.",
+        "description": "<h3>About</h3><p>Currently, I am developing a vehicle license plate recognition system for Universidad Cenfotec, learning about neural networks and computer vision with Python and YOLO algorithms.</p><h3>Role</h3><p>As part of this project, I am learning about academic research by writing a research paper about the discoveries and the process of the project.</p>"
     },
     "mobydyg-1": {
         "subtitle": "E-commerce Web Portal",
-        "short-description": "User module for an e-commerce costarican startup."
+        "short-description": "User module for an e-commerce costarican startup.",
+        "description": "<h3>About</h3><p>During 2022 I created responsive ecommerce web portals for MobyDyg, an ecommerce Costa Rican startup, using Angular framework with Typescript, AWS (Cognito, Lambda, Amplify, SDK), MySQL, and Git/GitHub as VCS. Worked in team and pair programming!</p><h3>Role</h3><p>One of my main tasks at MobyDyg was to create the user's management system for the shops' staff, through a part of the system called Backoffice. I was in charge of coding and debugging all of the screens I prototyped. For this task I used Figma, and coded in Typescript and Angular. For backend it was used AWS Cognito Service, and Amplify and AWS SDK libraries.</p><p>I was in charge of connecting front end functionalities like sign in, sign up, login, recover password and others, to AWS cloud services.</p><p>Also those functionalities were applied to the shops' interface to allow customers to log in and keep their items in a cart in the cloud.</p>"
     },
     "mobydyg-2": {
         "subtitle": "E-commerce Database Redesign",
-        "short-description": "Database redesign for an e-commerce costarican startup."
+        "short-description": "Database redesign for an e-commerce costarican startup.",
+        "description": "<h3>About</h3><p>During 2022 I was involved in the reconstruction of the ecommerce database for MobyDyg, an ecommerce Costa Rican startup, as old one wasn't obeying normalization rules for relational databases, in addition to a migration of a new architecture resulting in the necessity for a new database structure. It was required for me and my team mates to recreate the totality of the database to achieve system vision and functionality.</p><h3>Role</h3><p>My main role was to create the database structure and the relationships between the tables. I also created the database diagram and the documentation for the database. I used MySQL Workbench and DBeaver to create the database and the diagram, and also to create the documentation.</p><p>After the database was created, I was in charge of the migration of the data from the old database to the new one. I used DBeaver to create the migration script and to execute it.</p>"
     },
     "brand-book":{
         "subtitle": "Personal Branding Project",
-        "short-description": "Discover my personal brand book and the work behind it."
+        "short-description": "Discover my personal brand book and the work behind it.",
+        "description": "<h3>About</h3><p>My personal brand book is a project that I created to allow myself to sign all the work I produce and makes me fell proud. Its 100% created by me, and inspired by the stars!</p><p>Even though I'm not a designer, I created the brand book from scratch. I designed the logo, the color palette and the illustrations. I also created the layout and the content of the book.</p>",
+        "links": {
+            "download": "Click here to get the full brand book!"
+        }
     },
     "crafting-to-dos":{
         "subtitle": "A React Front End Project",
-        "short-description": "Developed with React and JavaScript (JSX) to organize your tasks."
+        "short-description": "Developed with React and JavaScript (JSX) to organize your tasks.",
+        "description": "<h3>About</h3><p>Crafting To Do's is an app created with React and JavaScript (JSX) that allows you to have your tasks organized. It's a front end app, using local storage for the to-dos. Design based in my Personal Brand Book. Check it out!</p>",
+        "links": {
+            "live": "Click here to test it live!",
+            "github": "Check out the repository on GitHub!"
+        }
     },
     "tournament-app":{
         "subtitle": "A 3Pillar Global Project",
-        "short-description": "A web app for the Costa Rican Taekwondo Federation to manage their tournaments."
+        "short-description": "A web app for the Costa Rican Taekwondo Federation to manage their tournaments.",
+        "description": "<h3>About</h3><p>During an internship in 3Pillar, I was assigned to a project for the Federación Costarricense de Taekwondo. My main activities were prototyping mockups in Figma for a responsive web application and bringing them to live using React.js, C#, ASP .NET MVC and SQL Server! Worked as a teammate in pair programming.</p><h3>Role</h3><p>Me and my teammates collaborated to create two versions of a prototype in Figma for the application. We designed two prototypes, mobile and desktop. Design was made based on a previously created design system.</p><p>As a collaborator of the team, I helped with the creation of the database system for the application, and the coding of some of the back-end and front-end functionalities.</p>"
     },
     "atlas":{
         "subtitle": "High School Graduation Project",
-        "short-description": "A web app for workaholics to manage their time and tasks during COVID-19 lockdown."
+        "short-description": "A web app for workaholics to manage their time and tasks during COVID-19 lockdown.",
+        "description": "<h3>About</h3><p>First application ever done with React as part of a graduation project. Atlas was a web app that allowed professionals to track workaholics while remote working during COVID-19 lockdown.</p>",
+        "links": {
+            "docs": "Click here to read the full documentation!"
+        }
     },
     "skem-club":{
         "subtitle": "A SkemClub Project",
-        "short-description": "Reactivation campaign for SKEM Club, Costa Rica's first high school innovation club."
+        "short-description": "Reactivation campaign for SKEM Club, Costa Rica's first high school innovation club.",
+        "description": "<h3>About</h3><p>During 2020, I created illustrations, designs, and art material for different campaigns and projects as a member of SKEM Club, first high school level innovation club in Costa Rica.</p><p>In 2021, I joined SKEM Club administrative team as part of the communication area of the club. During that time, I helped to plan the reactivation campaign of the club for 2021. Me and other team members were in charge of creating delivery dates, schedules, and publicity posts for SKEM Club's social media. My main role was planning schedules and organizing the calendar for the team to follow, also proposing and brainstorming ideas for the campaign.</p>"
     },
     "wonder":{
         "subtitle": "Expotec Winning Project",
         "short-description": "Video game and webpage with the goal of educating children about social, global and environmental problems.",
-        "description": "<h3>about</h3><p>Winning project at the Expotec: Science, Engineering and Art fair 2019. Wonder was a video game and a webpage with the goal of educating children about social, global and environmental problems. It's teachings are part of the Sustainable Development Goals promoted by the United Nations (UN).</p><p>As group project I contributed mainly to the webpage and also the art material for promoting the game in social media and the high school buildings.</p><h3>awards</h3><ul><li>Second place in Software Development at Don Bosco Professional Technical High School.</li><li>Winner of the best project in the art category at Don Bosco Professional Technical High School.</li><li>Special recognition in software development.</li><li>Recognition of Isthmus of Costa Rica for a proposal to solve current problems such as global warming.</li></ul>"
+        "description": "<h3>About</h3><p>Winning project at the Expotec: Science, Engineering and Art fair 2019. Wonder was a video game and a webpage with the goal of educating children about social, global and environmental problems. It's teachings are part of the Sustainable Development Goals promoted by the United Nations (UN).</p><p>As group project I contributed mainly to the webpage and also the art material for promoting the game in social media and the high school buildings.</p><h3>Awards</h3><ul><li>Second place in Software Development at Don Bosco Professional Technical High School.</li><li>Winner of the best project in the art category at Don Bosco Professional Technical High School.</li><li>Special recognition in software development.</li><li>Recognition of Isthmus of Costa Rica for a proposal to solve current problems such as global warming.</li></ul>",
+        "links": {
+            "docs": "Read the documentation online",
+            "instagram": "Read more about the project on Instagram!"
+        }
     }
 }

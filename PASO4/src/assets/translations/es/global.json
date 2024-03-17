@@ -34,7 +34,9 @@
     "projects":{
         "intro": "Algunos proyectos en los que he estado involucrado, relacionados con <pink>código</pink>, <pink>diseño</pink> y <pink>producción</pink>. ¡Haz clic en ellos para obtener más información!",
         "button": "ver más",
-        "button-close": "cerrar todo"
+        "button-close": "cerrar todo",
+        "stack": "Tecnologías",
+        "explore": "Explora"
     },
     "contact":{
         "intro": "Consulta mi <pink>información de contacto</pink> y <pink>redes sociales</pink>, ¡no dudes en ponerte en contacto conmigo!",

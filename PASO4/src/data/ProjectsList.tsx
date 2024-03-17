@@ -1,6 +1,6 @@
 import IProject from "../interfaces/IProject";
 import { DiMysql, DiMsqlServer } from "react-icons/di";
-import { SiJavascript, SiReact, SiGithub, SiNodedotjs, SiExpress, SiAdobeillustrator, SiAdobepremierepro, SiDiagramsdotnet, SiFigma, SiHtml5, SiCss3, SiInstagram, SiPython, SiAmazonaws, SiGooglecolab, SiOpencv, SiTensorflow, SiYolo, SiCsharp, SiAngular, SiTypescript, SiFlask } from "react-icons/si";
+import { SiJavascript, SiReact, SiGithub, SiNodedotjs, SiExpress, SiAdobeillustrator, SiAdobepremierepro, SiDiagramsdotnet, SiFigma, SiHtml5, SiCss3, SiInstagram, SiPython, SiAmazonaws, SiGooglecolab, SiOpencv, SiTensorflow, SiYolo, SiCsharp, SiAngular, SiTypescript, SiFlask, SiYoutube } from "react-icons/si";
 import { FaRegFilePdf, FaJava } from "react-icons/fa";
 import { BiGlobe } from "react-icons/bi";
 import { FaBookAtlas } from "react-icons/fa6";
@@ -17,21 +17,36 @@ import HorusBanner from "../assets/projects/horus/banner.jpg";
 
 // MobyDyg
 import MobyDygBanner from "../assets/projects/mobydyg/banner.jpg";
+import MobyDyg1 from "../assets/projects/mobydyg/1.png";
+import MobyDyg2 from "../assets/projects/mobydyg/2.png";
+import MobyDyg3 from "../assets/projects/mobydyg/3.png";
+import MobyDyg4 from "../assets/projects/mobydyg/4.png";
+import MobyDyg5 from "../assets/projects/mobydyg/5.png";
 
 // Crafting To Do's
 import CrafToDosBanner from "../assets/projects/crafting-to-dos/banner.jpg";
+import CrafToDos1 from "../assets/projects/crafting-to-dos/1.png";
 
 // Contents Brand Book
 import ContentsBrandBookBanner from "../assets/projects/content-brand-book/banner.jpg";
+import BrandBook from "../assets/download/Contents-Brand-Book.pdf";
 
 // Federacion Costarricense de Taekwondo
 import FederacionCostarricenseDeTaekwondoBanner from "../assets/projects/tournament-app/banner.jpg";
+import FederacionCostarricenseDeTaekwondo1 from "../assets/projects/tournament-app/1.png";
+import FederacionCostarricenseDeTaekwondo2 from "../assets/projects/tournament-app/2.png";
 
 // Atlas
 import AtlasBanner from "../assets/projects/atlas/banner.jpg";
+import AtlasDoc from "../assets/download/Atlas-Documentacion.pdf";
+import AtlasVideo from "../assets/projects/atlas/video.mp4";
 
 // SkemClub
 import SkemClubBanner from "../assets/projects/skemclub/banner.jpg";
+import SkemClub1 from "../assets/projects/skemclub/1.png";
+import SkemClub2 from "../assets/projects/skemclub/2.png";
+import SkemClub3 from "../assets/projects/skemclub/3.png";
+import SkemClub4 from "../assets/projects/skemclub/4.png";
 
 // Wonder
 import WonderBanner from "../assets/projects/wonder/banner.jpg";
@@ -42,6 +57,7 @@ import Wonder4 from "../assets/projects/wonder/4.jpg";
 import Wonder5 from "../assets/projects/wonder/5.jpg";
 import Wonder6 from "../assets/projects/wonder/6.jpg";
 import Wonder7 from "../assets/projects/wonder/7.jpg";
+import WondeVideo from "../assets/projects/wonder/video.mp4";
 
 const ProjectsList: () => IProject[] = () => {
     const { t } = useTranslation("projects");
@@ -87,14 +103,24 @@ const ProjectsList: () => IProject[] = () => {
                 }
             ],
             shortDescription: t("isaac.short-description"),
-            description: (
-                <>
-                </>
-            ),
+            description: <Trans i18nKey="isaac.description" ns="projects" components={{ h3: <h3 className="fw-bold" />, p: <p /> }} />,
             images: [
                 IsaacBanner
             ],
-            links: []
+            links: [
+                {
+                    icon: BiGlobe,
+                    title: t("isaac.links.news"),
+                    text: "so.ucr.ac.cr",
+                    url: "https://www.so.ucr.ac.cr/es/noticia/estudiantes-de-ingenieria-industrial-resultaron-ganadores-del-programa-de-innovacion"
+                },
+                {
+                    icon: SiYoutube,
+                    title: t("isaac.links.video"),
+                    text: "ISAAC - Video",
+                    url: "https://www.youtube.com/watch?v=_Bfynmz3pck"
+                }
+            ]
         },
         {
             title: "Cenfoteco Kingdoms",
@@ -112,10 +138,7 @@ const ProjectsList: () => IProject[] = () => {
                 }
             ],
             shortDescription: t("cenfoteco.short-description"),
-            description: (
-                <>
-                </>
-            ),
+            description: <Trans i18nKey="cenfoteco.description" ns="projects" components={{ h3: <h3 className="fw-bold" />, p: <p /> }} />,
             images: [
                 CenfotecoKingdomsBanner
             ],
@@ -153,10 +176,7 @@ const ProjectsList: () => IProject[] = () => {
                 }
             ],
             shortDescription: t("horus.short-description"),
-            description: (
-                <>
-                </>
-            ),
+            description: <Trans i18nKey="horus.description" ns="projects" components={{ h3: <h3 className="fw-bold" />, p: <p /> }} />,
             images: [
                 HorusBanner
             ],
@@ -194,11 +214,14 @@ const ProjectsList: () => IProject[] = () => {
                 }
             ],
             shortDescription: t("mobydyg-1.short-description"),
-            description: (
-                <></>
-            ),
+            description: <Trans i18nKey="mobydyg-1.description" ns="projects" components={{ h3: <h3 className="fw-bold" />, p: <p /> }} />,
             images: [
-                MobyDygBanner
+                MobyDygBanner,
+                MobyDyg1,
+                MobyDyg2,
+                MobyDyg3,
+                MobyDyg4,
+                MobyDyg5
             ],
             links: []
         },
@@ -226,9 +249,7 @@ const ProjectsList: () => IProject[] = () => {
                 }
             ],
             shortDescription: t("mobydyg-2.short-description"),
-            description: (
-                <></>
-            ),
+            description: <Trans i18nKey="mobydyg-2.description" ns="projects" components={{ h3: <h3 className="fw-bold" />, p: <p /> }} />,
             images: [
                 MobyDygBanner
             ],
@@ -250,11 +271,18 @@ const ProjectsList: () => IProject[] = () => {
                 }
             ],
             shortDescription: t("brand-book.short-description"),
-            description: (<></>),
+            description: <Trans i18nKey="brand-book.description" ns="projects" components={{ h3: <h3 className="fw-bold" />, p: <p /> }} />,
             images: [
                 ContentsBrandBookBanner
             ],
-            links: []
+            links: [
+                {
+                    icon: FaRegFilePdf,
+                    title: t("brand-book.links.download"),
+                    text: "Contents Brand Book.pdf",
+                    url: BrandBook
+                }
+            ]
         },
         {
             title: "Crafting To Do's",
@@ -276,25 +304,21 @@ const ProjectsList: () => IProject[] = () => {
                 }
             ],
             shortDescription: t("crafting-to-dos.short-description"),
-            description: (
-                <>
-                    <h2 className="subtitle">About.</h2>
-                    <p className="body-text">Crafting To Do's is an app created with React and JavaScript (JSX) that allows you to have your tasks organized. It’s a front end app, using local storage for the to-dos. Design based in my Personal Brand Book. Check it out!</p>
-                </>
-            ),
+            description: <Trans i18nKey="crafting-to-dos.description" ns="projects" components={{ h3: <h3 className="fw-bold" />, p: <p /> }} />,
             images: [
-                CrafToDosBanner
+                CrafToDosBanner,
+                CrafToDos1
             ],
             links: [
                 {
                     icon: BiGlobe,
-                    title: "Click here to test it live!",
+                    title: t("crafting-to-dos.links.live"),
                     text: "saturnxs.github.io/Crafting-ToDos",
                     url: "https://saturnxs.github.io/Crafting-ToDos/"
                 },
                 {
                     icon: SiGithub,
-                    title: "Check out the repository on GitHub!",
+                    title: t("crafting-to-dos.links.github"),
                     text: "github.com/Saturnxs/Crafting-ToDos",
                     url: "https://github.com/Saturnxs/Crafting-ToDos"
                 }
@@ -328,14 +352,11 @@ const ProjectsList: () => IProject[] = () => {
                 }
             ],
             shortDescription: t("tournament-app.short-description"),
-            description: (
-                <>
-                    <h2 className="subtitle">About.</h2>
-                    <p className="body-text">A web app for the Costa Rican Taekwondo Federation to manage their tournaments. It was developed with React and Node.js, using Microsoft SQL Server as the database. The app was designed with Figma and Adobe Illustrator.</p>
-                </>
-            ),
+            description: <Trans i18nKey="tournament-app.description" ns="projects" components={{ h3: <h3 className="fw-bold" />, p: <p /> }} />,
             images: [
-                FederacionCostarricenseDeTaekwondoBanner
+                FederacionCostarricenseDeTaekwondoBanner,
+                FederacionCostarricenseDeTaekwondo1,
+                FederacionCostarricenseDeTaekwondo2
             ],
             links: []
         },
@@ -375,21 +396,17 @@ const ProjectsList: () => IProject[] = () => {
                 }
             ],
             shortDescription: t("atlas.short-description"),
-            description: (
-                <>
-                    <h2 className="subtitle">About.</h2>
-                    <p className="body-text">First application ever done with React as part of a graduation project. Atlas was a web app that allowed professionals to track workaholics while remote working during COVID-19 lockdown.</p>
-                </>
-            ),
+            description: <Trans i18nKey="atlas.description" ns="projects" components={{ h3: <h3 className="fw-bold" />, p: <p /> }} />,
             images: [
-                AtlasBanner
+                AtlasBanner,
+                AtlasVideo
             ],
             links: [
                 {
                     icon: FaRegFilePdf,
-                    title: "Click here to read full documentation!",
+                    title: t("atlas.links.docs"),
                     text: "Atlas - Documentación.pdf",
-                    url: "static/doc/Atlas - Documentación.pdf"
+                    url: AtlasDoc
                 }
             ]
         },
@@ -400,9 +417,13 @@ const ProjectsList: () => IProject[] = () => {
             year: "2021",
             stack: [],
             shortDescription: t("skem-club.short-description"),
-            description: (<></>),
+            description: <Trans i18nKey="skem-club.description" ns="projects" components={{ h3: <h3 className="fw-bold" />, p: <p />, ul: <ul />, li: <li /> }} />,
             images: [
-                SkemClubBanner
+                SkemClubBanner,
+                SkemClub1,
+                SkemClub2,
+                SkemClub3,
+                SkemClub4
             ],
             links: []
         },
@@ -437,6 +458,7 @@ const ProjectsList: () => IProject[] = () => {
             description: <Trans i18nKey="wonder.description" ns="projects" components={{ h3: <h3 className="fw-bold" />, p: <p />, ul: <ul />, li: <li /> }} />,
             images: [
                 WonderBanner,
+                WondeVideo,
                 Wonder1,
                 Wonder2,
                 Wonder3,
@@ -448,13 +470,13 @@ const ProjectsList: () => IProject[] = () => {
             links: [
                 {
                     icon: FaBookAtlas,
-                    title: "Read the documentation online!",
+                    title: t("wonder.links.docs"),
                     text: "Wonder - Documentación.pdf",
                     url: "https://www.calameo.com/books/0060693746d1ded536ca7/"
                 },
                 {
                     icon: SiInstagram,
-                    title: "Read more about the project on Instagram!",
+                    title: t("wonder.links.instagram"),
                     text: "_wonder.r",
                     url: "https://www.instagram.com/_wonder.r/"
                 }

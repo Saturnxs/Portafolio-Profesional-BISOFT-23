@@ -34,7 +34,9 @@
     "projects":{
         "intro": "Some <pink>code</pink>, <pink>design</pink> and <pink>production</pink> projects in which I've been involved. <pink>Click</pink> on them to learn more!",
         "button": "show more",
-        "button-close": "close all"
+        "button-close": "close all",
+        "stack": "Stack",
+        "explore": "Explore"    
     },
     "contact":{
         "intro": "Check out my <pink>contact information</pink> and <pink>social media</pink, feel free to get in touch with me!",
