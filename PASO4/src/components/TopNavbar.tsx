@@ -17,20 +17,20 @@ const TopNavBar: React.FC = () => {
                         <img alt='Home' src={ThomasLogo} className="w-50 light-on" />
                     </a>
                 </div>
-                <div className="col-10 d-flex justify-content-center">
-                    <a role="button" className="px-4 text-decoration-none fw-bold text-white d-flex align-items-center hover-light-on" onClick={() => scrollToElementById("me")}>
+                <div className="navbar col-10 d-flex justify-content-center">
+                    <a href="#me" role="button" className="px-4 text-decoration-none fw-bold text-white d-flex align-items-center hover-light-on" onClick={() => scrollToElementById("me")}>
                         <img src={SaturnIcon} className="menu-icons text-white" />
                         <span className="px-3">{t("navbar.about")} </span>
                     </a>
-                    <a role="button" className="px-4 text-decoration-none fw-bold text-white d-flex align-items-center hover-light-on" onClick={() => scrollToElementById("stack")}>
+                    <a href="#stack" role="button" className="px-4 text-decoration-none fw-bold text-white d-flex align-items-center hover-light-on" onClick={() => scrollToElementById("stack")}>
                         <img src={JupiterIcon} className="menu-icons text-white" />
                         <span className="px-3">{t("navbar.stack")}</span>
                     </a>
-                    <a role="button" className="px-4 text-decoration-none fw-bold text-white d-flex align-items-center hover-light-on" onClick={() => scrollToElementById("projects")}>
+                    <a href="#projects" role="button" className="px-4 text-decoration-none fw-bold text-white d-flex align-items-center hover-light-on" onClick={() => scrollToElementById("projects")}>
                         <img src={MarsIcon} className="menu-icons text-white" />
                         <span className="px-3">{t("navbar.projects")}</span>
                     </a>
-                    <a role="button" className="px-4 text-decoration-none fw-bold text-white d-flex align-items-center hover-light-on" onClick={() => scrollToElementById("contact")}>
+                    <a href="#contact" role="button" className="px-4 text-decoration-none fw-bold text-white d-flex align-items-center hover-light-on" onClick={() => scrollToElementById("contact")}>
                         <img src={EarthIcon} className="menu-icons text-white" />
                         <span className="px-3">{t("navbar.contact")}</span>
                     </a>

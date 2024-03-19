@@ -21,17 +21,17 @@ const MobileHeader: React.FC = () => {
                             <img alt='Home' src={ThomasLogo} className="body-icons light-on" />
                         </a>
                     </div>
-                    <div className="col-12 d-flex flex-column justify-content-center align-items-center fs-5 fw-bold">
-                        <a role="button" className="py-2 text-decoration-none text-white light-on" onClick={() => { setShow(!show); scrollToElementById("me") }}>
+                    <div className="navbar col-12 d-flex flex-column justify-content-center align-items-center fs-5 fw-bold">
+                        <a href="#me" role="button" className="py-2 text-decoration-none text-white" onClick={() => { setShow(!show); scrollToElementById("me") }}>
                             {t("navbar.about")}
                         </a>
-                        <a role="button" className="py-2 text-decoration-none text-white light-on" onClick={() => { setShow(!show); scrollToElementById("stack") }}>
+                        <a href="#stack" role="button" className="py-2 text-decoration-none text-white" onClick={() => { setShow(!show); scrollToElementById("stack") }}>
                             {t("navbar.stack")}
                         </a>
-                        <a role="button" className="py-2 text-decoration-none text-white light-on" onClick={() => { setShow(!show); scrollToElementById("projects") }}>
+                        <a href="#projects" role="button" className="py-2 text-decoration-none text-white" onClick={() => { setShow(!show); scrollToElementById("projects") }}>
                             {t("navbar.projects")}
                         </a>
-                        <a role="button" className="py-2 text-decoration-none text-white light-on" onClick={() => { setShow(!show); scrollToElementById("contact") }}>
+                        <a href="#contact" role="button" className="py-2 text-decoration-none text-white" onClick={() => { setShow(!show); scrollToElementById("contact") }}>
                             {t("navbar.contact")}
                         </a>
                     </div>

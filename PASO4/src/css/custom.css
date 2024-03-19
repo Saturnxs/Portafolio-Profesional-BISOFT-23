@@ -215,6 +215,23 @@ h2 {
   outline: none;
 }
 
+/********** HEADER **********/
+.modal-menu-mobile {
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.modal-menu-mobile-active {
+  visibility: visible;
+  opacity: 1;
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar .active {
+  filter: var(--glow-effect);
+}
+
 /********** ABOUT ME **********/
 .about-me-image-container {
   width: 70%;
@@ -235,19 +252,6 @@ h2 {
 
 #me h1 {
   height: 8rem;
-}
-
-/********** HEADER **********/
-.modal-menu-mobile {
-  visibility: hidden;
-  opacity: 0;
-  transition: all 0.3s ease-in-out;
-}
-
-.modal-menu-mobile-active {
-  visibility: visible;
-  opacity: 1;
-  transition: all 0.3s ease-in-out;
 }
 
 /********** PROJECTS **********/
