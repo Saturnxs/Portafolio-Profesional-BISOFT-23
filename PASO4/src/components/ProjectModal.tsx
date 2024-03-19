@@ -1,21 +1,11 @@
 import { useRef, useEffect } from "react";
-import { IconType } from "react-icons";
 import { CgCloseO } from "react-icons/cg";
 import { Splide, SplideSlide } from '@splidejs/react-splide';
 import { loadScrollModal } from "../utils/utils";
 import { useTranslation } from "react-i18next";
+import IProjectModal from "../interfaces/IProjectModal";
+import LinkBookmark from "./LinkBookmark";
 import '@splidejs/react-splide/css';
-
-interface IProjectModal {
-    title: string;
-    subtitle: string;
-    year: string;
-    stack: { name: string, icon: IconType }[];
-    description: JSX.Element;
-    images?: string[];
-    links?: { title: string, text: string, url: string, icon: IconType }[];
-    onClose: () => void;
-}
 
 const ProjectModal: React.FC<IProjectModal> = ({ title, subtitle, year, stack, description, links, images, onClose }) => {
     const [t] = useTranslation();
@@ -81,7 +71,7 @@ const ProjectModal: React.FC<IProjectModal> = ({ title, subtitle, year, stack, d
                 </div>
             </div>
             <div className="row px-4 justify-content-between pb-5">
-                <div className="col-md-7">
+                <div className="col-xl-7 col-12">
                     {/* Main Carousel */}
                     <Splide options={optionsMainCarousel} id="project-modal-splide" ref={mainRef} className="pb-4">
                         {images?.map((image, index) => {
@@ -115,37 +105,40 @@ const ProjectModal: React.FC<IProjectModal> = ({ title, subtitle, year, stack, d
                         </Splide>
                     )}
                 </div>
-                <div className="col-md-5 ps-md-5 info-div px-4 py-5 py-md-0">
-                    <div className="mb-4">
-                        {description}
+                <div className="col-xl-5 col-12 ps-md-5 info-div px-4 py-5 py-md-0">
+                    <div className="row mb-4">
+                        <div className="col-12">
+                            {description}
+                        </div>
                     </div>
-                    <div className="mb-4">
-                        {stack && stack.length > 0 && <>
-                            <h3 className="fw-bold">{t("projects.stack")}</h3>
-                            {stack.map((stackItem) => {
-                                const Icon = stackItem.icon;
-                                return (<Icon size={40} className="mx-2 my-3" key={stackItem.name} />);
-                            })}
-                        </>}
+                    <div className="row mb-4">
+                        <div className="col-12">
+                            {stack && stack.length > 0 && <>
+                                <h3 className="fw-bold">{t("projects.stack")}</h3>
+                                {stack.map((stackItem) => {
+                                    const Icon = stackItem.icon;
+                                    return (<Icon size={40} className="mx-2 my-3" key={stackItem.name} />);
+                                })}
+                            </>}
+                        </div>
                     </div>
-                    <div className="mb-4">
-                        {links && links.length > 0 && <>
-                            <h3 className="fw-bold">{t("projects.explore")}</h3>
-                            {links?.map((link, index) => {
-                                return (
-                                    <a href={link.url} className="d-flex align-items-center text-decoration-none hover-light-on py-4" target="_blank" key={index}>
-                                        <div className="row align-items-center">
-                                            <div className="col-1 text-center text-white">
-                                                {link.icon({ size: 50 })}
-                                            </div>
-                                            <div className="col-11">
-                                                <p className="text-white m-0 ps-5">{link.title}<br /><span className="fw-bold color-pink-diamond">{link.text}</span></p>
-                                            </div>
-                                        </div>
-                                    </a>
-                                );
-                            })}
-                        </>}
+                    <div className="row">
+                        <div className="col-md-10 col-12">
+                            {links && links.length > 0 && <>
+                                <h3 className="fw-bold">{t("projects.explore")}</h3>
+                                {links?.map((link, index) => {
+                                    return (
+                                        <LinkBookmark
+                                            icon={link.icon}
+                                            title={link.title}
+                                            url={link.url}
+                                            urlTitle={link.text}
+                                            key={index}
+                                        />
+                                    );
+                                })}
+                            </>}
+                        </div>
                     </div>
                 </div>
             </div>

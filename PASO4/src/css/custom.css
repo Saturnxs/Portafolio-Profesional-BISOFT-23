@@ -380,16 +380,6 @@ h2 {
 /********** RESPONSIVE **********/
 
 @media screen and (max-width: 768px) {
-  .modal-project {
-    overflow-y: auto;
-    height: 100%;
-  }
-
-  .modal-project .info-div {
-    overflow-y: hidden;
-    height: 100%;
-  }
-
   .body-icons {
     width: 50px;
   }
@@ -401,5 +391,17 @@ h2 {
   .scroll-to-top {
     bottom: 25px !important;
     right: 25px !important;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .modal-project {
+    overflow-y: auto;
+    height: 100%;
+  }
+
+  .modal-project .info-div {
+    overflow-y: hidden;
+    height: 100%;
   }
 }

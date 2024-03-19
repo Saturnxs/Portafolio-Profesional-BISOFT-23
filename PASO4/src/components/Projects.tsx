@@ -3,11 +3,20 @@ import MarsIcon from "../assets/svg/mars-icon.svg"
 import ProjectCard from "./ProjectCard";
 import ProjectList from "../data/ProjectsList";
 import { useTranslation, Trans } from 'react-i18next';
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const Contact: React.FC = () => {
     const { t } = useTranslation();
     const [loadedProjects, setLoadedProjects] = useState(3);
+
+    useEffect(() => {
+        const width = window.innerWidth;
+        if (width <= 992) {
+            setLoadedProjects(4);
+        } else {
+            setLoadedProjects(3);
+        }
+    }, []);
 
     return (
         <>

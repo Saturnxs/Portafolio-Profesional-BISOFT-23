@@ -8,10 +8,13 @@ import { FaGithub, FaLinkedinIn, FaWhatsapp } from "react-icons/fa";
 import { FaRegFilePdf } from "react-icons/fa6";
 import { FaRegEnvelope } from "react-icons/fa";
 import { useTranslation, Trans } from 'react-i18next';
+import LinkBookmark from "./LinkBookmark";
 
 const Contact: React.FC = () => {
     const { t, i18n } = useTranslation();
     const [message, setMessage] = useState<string>("");
+    const [mobile, setMobile] = useState<boolean>(false);
+    const [iconsSize, setIconsSize] = useState<number>(50);
 
     useEffect(() => {
         const alertMessage = document.querySelector(".alert-message") as HTMLElement;
@@ -27,6 +30,16 @@ const Contact: React.FC = () => {
             }, 3000);
         }
     }, [message]);
+
+    useEffect(() => {
+        if (window.innerWidth < 768) {
+            setMobile(true);
+            setIconsSize(35);
+        } else {
+            setMobile(false);
+            setIconsSize(50);
+        }
+    }, []);
 
     const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
@@ -61,7 +74,7 @@ const Contact: React.FC = () => {
     return (
         <div className="row justify-content-center align-items-center min-vh-90" id="contact">
             <div className="col-md-12 col-11 px-md-5">
-                <div className="row py-5 justify-content-center">
+                <div className="row py-3 py-md-5 justify-content-center">
                     <div className="col-md-5 col-12" data-aos="fade-up" data-aos-duration="1000">
                         <TitlePlanet
                             imgRoute={EarthIcon}
@@ -72,81 +85,40 @@ const Contact: React.FC = () => {
                     </div>
                 </div>
                 <div className="row justify-content-center align-items-center">
-                    <div className="col-md-4 col-12 pb-md-0 pb-5 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-duration="1000">
-                        <a href="https://github.com/Saturnxs" target="_blank" className="d-flex align-items-center text-decoration-none hover-light-on py-4">
-                            <div className="row align-items-center">
-                                <div className="col-1 text-center text-white">
-                                    <FaGithub size={50} />
-                                </div>
-                                <div className="col-11">
-                                    <p className="text-white m-0 ps-5">
-                                        {t("contact.contact-info.github.title")}
-                                        <br /><span className="fw-bold color-pink-diamond">github.com/Saturnxs</span>
-                                    </p>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="https://www.linkedin.com/in/thomas-bermudez-mora" target="_blank" className="d-flex align-items-center text-decoration-none hover-light-on py-4">
-                            <div className="row align-items-center">
-                                <div className="col-1 text-center text-white">
-                                    <FaLinkedinIn size={50} />
-                                </div>
-                                <div className="col-11">
-                                    <p className="text-white m-0 ps-5">
-                                        {t("contact.contact-info.linkedin.title")}
-                                        <br /><span className="fw-bold color-pink-diamond">in/thomas-bermudez-mora</span>
-                                    </p>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="mailto:bmthomas.code@gmail.com" className="d-flex align-items-center text-decoration-none hover-light-on py-4">
-                            <div className="row align-items-center">
-                                <div className="col-1 text-center text-white">
-                                    <FaRegEnvelope size={50} />
-                                </div>
-                                <div className="col-11">
-                                    <p className="text-white m-0 ps-5">
-                                        {t("contact.contact-info.email.title")}
-                                        <br />
-                                        <span className="fw-bold color-pink-diamond d-md-block d-none">
-                                            bmthomas.code@gmail.com
-                                        </span>
-                                        <span className="fw-bold color-pink-diamond d-md-none d-block">
-                                            {t("contact.contact-info.email.mobile-variant")}
-                                        </span>
-                                    </p>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="https://wa.me/50662536365" target="_blank" className="d-flex align-items-center text-decoration-none hover-light-on py-4">
-                            <div className="row align-items-center">
-                                <div className="col-1 text-center text-white">
-                                    <FaWhatsapp size={50} />
-                                </div>
-                                <div className="col-11">
-                                    <p className="text-white m-0 ps-5">
-                                        {t("contact.contact-info.whatsapp.title")}
-                                        <br /><span className="fw-bold color-pink-diamond">wa.me/50662536365</span>
-                                    </p>
-                                </div>
-                            </div>
-                        </a>
-                        <a href={i18n.language === "en" ? CVEn : CVEs} download="CV-Thomas.pdf" className="d-flex align-items-center text-decoration-none hover-light-on py-4">
-                            <div className="row align-items-center">
-                                <div className="col-1 text-center text-white">
-                                    <FaRegFilePdf size={50} />
-                                </div>
-                                <div className="col-11">
-                                    <p className="text-white m-0 ps-5">
-                                        {t("contact.contact-info.cv.title")}
-                                        <br /><span className="fw-bold color-pink-diamond">{t("contact.contact-info.cv.url")}</span>
-                                    </p>
-                                </div>
-                            </div>
-                        </a>
+                    <div className="col-xl-5 col-md-7 col-12 pb-md-0 pb-5 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-duration="1000">
+                        <LinkBookmark
+                            icon={() => <FaGithub size={iconsSize} />}
+                            title={t("contact.contact-info.github.title")}
+                            url="https://github.com/Saturnxs"
+                            urlTitle="github.com/Saturnxs"
+                        />
+                        <LinkBookmark
+                            icon={() => <FaLinkedinIn size={iconsSize} />}
+                            title={t("contact.contact-info.linkedin.title")}
+                            url="https://www.linkedin.com/in/thomas-bermudez-mora"
+                            urlTitle="in/thomas-bermudez-mora"
+                        />
+                        <LinkBookmark
+                            icon={() => <FaRegEnvelope size={iconsSize} />}
+                            title={t("contact.contact-info.email.title")}
+                            url="mailto:bmthomas.code@gmail.com"
+                            urlTitle={mobile ? t("contact.contact-info.email.mobile-variant") : "bmthomas.code@gmail.com"}
+                        />
+                        <LinkBookmark
+                            icon={() => <FaWhatsapp size={iconsSize} />}
+                            title={t("contact.contact-info.whatsapp.title")}
+                            url="https://wa.me/50662536365"
+                            urlTitle="wa.me/50662536365"
+                        />
+                        <LinkBookmark
+                            icon={() => <FaRegFilePdf size={iconsSize} />}
+                            title={t("contact.contact-info.cv.title")}
+                            url={i18n.language === "en" ? CVEn : CVEs}
+                            urlTitle={t("contact.contact-info.cv.url")}
+                        />
                     </div>
-                    <div className="col-md-5 col-12">
-                        <form className="contact-form row bg-glassmorphism-light py-5 px-4" onSubmit={sendEmail} data-aos="fade-up" data-aos-duration="1000">
+                    <div className="col-xl-6 col-12" data-aos="fade-up" data-aos-duration="1000">
+                        <form className="contact-form row bg-glassmorphism-light py-5 px-md-4 px-2" onSubmit={sendEmail}>
                             <div className="col-12 alert-message">
                                 <h5 className="text-white light-on d-flex align-items-center mb-4">{message}</h5>
                             </div>

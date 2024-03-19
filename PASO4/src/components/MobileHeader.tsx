@@ -2,10 +2,10 @@ import { FaBars, FaXmark } from "react-icons/fa6";
 import { useState, useEffect } from "react";
 import ThomasLogo from "../assets/svg/thomas-logo.svg";
 import { useTranslation } from 'react-i18next';
+import { scrollToElementById } from "../utils/utils";
 
 const MobileHeader: React.FC = () => {
     const [t, i18n] = useTranslation();
-
     const [show, setShow] = useState(true);
 
     useEffect(() => {
@@ -14,7 +14,7 @@ const MobileHeader: React.FC = () => {
 
     return (
         <>
-            <div className={`container-fluid bg-glassmorphism position-fixed z-2 p-5 h-100 d-md-none ${show ? "modal-menu-mobile" : "modal-menu-mobile-active"}`}>
+            <div className={`container-fluid bg-glassmorphism position-fixed z-2 p-5 h-100 d-lg-none ${show ? "modal-menu-mobile" : "modal-menu-mobile-active"}`}>
                 <div className="row d-flex flex-column justify-content-around align-items-center h-100">
                     <div className="col-12 text-center">
                         <a href="/">
@@ -22,16 +22,16 @@ const MobileHeader: React.FC = () => {
                         </a>
                     </div>
                     <div className="col-12 d-flex flex-column justify-content-center align-items-center fs-5 fw-bold">
-                        <a href="#me" className="py-2 text-decoration-none text-white light-on" onClick={() => setShow(!show)}>
+                        <a role="button" className="py-2 text-decoration-none text-white light-on" onClick={() => { setShow(!show); scrollToElementById("me") }}>
                             {t("navbar.about")}
                         </a>
-                        <a href="#stack" className="py-2 text-decoration-none text-white light-on" onClick={() => setShow(!show)}>
+                        <a role="button" className="py-2 text-decoration-none text-white light-on" onClick={() => { setShow(!show); scrollToElementById("stack") }}>
                             {t("navbar.stack")}
                         </a>
-                        <a href="#projects" className="py-2 text-decoration-none text-white light-on" onClick={() => setShow(!show)}>
+                        <a role="button" className="py-2 text-decoration-none text-white light-on" onClick={() => { setShow(!show); scrollToElementById("projects") }}>
                             {t("navbar.projects")}
                         </a>
-                        <a href="#contact" className="py-2 text-decoration-none text-white light-on" onClick={() => setShow(!show)}>
+                        <a role="button" className="py-2 text-decoration-none text-white light-on" onClick={() => { setShow(!show); scrollToElementById("contact") }}>
                             {t("navbar.contact")}
                         </a>
                     </div>
@@ -43,7 +43,7 @@ const MobileHeader: React.FC = () => {
                 </div>
             </div >
 
-            <nav className="p-4 sticky-top z-2 d-md-none">
+            <nav className="p-4 sticky-top z-2 d-lg-none">
                 <div className="container-fluid">
                     <div className="row">
                         <div className="col-12 d-flex justify-content-between align-items-center">
