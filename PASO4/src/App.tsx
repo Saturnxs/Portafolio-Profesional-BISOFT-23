@@ -3,8 +3,7 @@ import Contact from "./components/Contact"
 import Projects from "./components/Projects"
 import Stack from "./components/Stack"
 
-function App() {
-
+const App: React.FC = () => {
   return (
     <div className="container-fluid px-4">
       <AboutMe />

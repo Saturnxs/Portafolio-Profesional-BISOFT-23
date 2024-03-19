@@ -10,17 +10,19 @@ import { I18nextProvider } from 'react-i18next'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 
-// Custom
-import './css/custom.css'
-import './utils/utils.ts'
+// ScrollToTop
+import ScrollToTop from 'react-scroll-to-top'
+import { IoMdRocket } from "react-icons/io";
 
 // Components
 import App from './App.tsx'
 import Footer from './components/Footer.tsx'
 import MobileHeader from './components/MobileHeader.tsx'
 import TopNavBar from './components/TopNavbar.tsx'
-import ScrollToTop from 'react-scroll-to-top'
-import { IoMdRocket } from "react-icons/io";
+
+// Custom
+import './utils/utils.ts'
+import './css/custom.css'
 
 
 AOS.init()

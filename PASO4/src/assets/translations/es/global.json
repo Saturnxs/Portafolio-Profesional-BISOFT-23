@@ -1,12 +1,12 @@
 {
     "navbar":{
-        "about":"sobre mi",
-        "stack":"tecnologías",
-        "projects":"proyectos",
-        "contact":"contacto"
+        "about":"Sobre mí",
+        "stack":"Tecnologías",
+        "projects":"Proyectos",
+        "contact":"Contacto"
     },
     "about-me":{
-        "hi":"Hola!",
+        "hi":"¡Hola!",
         "name":"Mi nombre es Thomas",
         "im":"Soy",
         "typed-strings": [
@@ -32,7 +32,7 @@
         "design": "Diseño y prototipado"
     },
     "projects":{
-        "intro": "Algunos proyectos en los que he estado involucrado, relacionados con <pink>código</pink>, <pink>diseño</pink> y <pink>producción</pink>. ¡Haz clic en ellos para obtener más información!",
+        "intro": "Algunos proyectos en los que he estado involucrado, relacionados con <pink>código</pink>, <pink>diseño</pink> y <pink>producción</pink>.",
         "button": "ver más",
         "button-close": "cerrar todo",
         "stack": "Tecnologías",

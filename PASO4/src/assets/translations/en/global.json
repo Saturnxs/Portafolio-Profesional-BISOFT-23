@@ -1,9 +1,9 @@
 {
     "navbar":{
-        "about":"about me",
-        "stack":"stack",
-        "projects":"projects",
-        "contact":"contact"
+        "about":"About me",
+        "stack":"Stack",
+        "projects":"Projects",
+        "contact":"Contact"
     },
     "about-me":{
         "hi":"Hi!",
@@ -32,7 +32,7 @@
         "design": "Design & Prototyping"
     },
     "projects":{
-        "intro": "Some <pink>code</pink>, <pink>design</pink> and <pink>production</pink> projects in which I've been involved. <pink>Click</pink> on them to learn more!",
+        "intro": "Some <pink>code</pink>, <pink>design</pink> and <pink>production</pink> projects in which I've been involved.",
         "button": "show more",
         "button-close": "close all",
         "stack": "Stack",
