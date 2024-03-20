@@ -8,24 +8,24 @@ const AboutMe: React.FC = () => {
     const { t } = useTranslation();
 
     return (
-        <div className="row py-5 justify-content-center align-items-center min-vh-90" id="me">
-            <div className="col-md-6 col-12 text-white px-4" data-aos="fade-up" data-aos-duration="1000">
+        <div className="row pt-5 mt-md-5 px-4 justify-content-center align-items-center min-vh-100" id="me">
+            <div className="col-md-6 col-12 text-white" data-aos="fade-up" data-aos-duration="1000">
                 <div>
-                    <h2>
+                    <h1>
                         {t("about-me.hi")}
                         <span className="px-3 align-bottom"><img src={SaturnIcon} className="body-icons light-on" /></span>
-                        {t("about-me.name")}
-                    </h2>
+                    </h1>
+                    <h1 className="typed">
+                        <span className="light-on py-4 mb-4">
+                            {t("about-me.im")} <ReactTyped
+                                strings={t("about-me.typed-strings", { returnObjects: true }) as string[]}
+                                typeSpeed={70}
+                                backSpeed={90}
+                                loop
+                            />
+                        </span>
+                    </h1>
                 </div>
-
-                <h1 className="light-on py-4 mb-4" >
-                    {t("about-me.im")} <ReactTyped
-                        strings={t("about-me.typed-strings", { returnObjects: true }) as string[]}
-                        typeSpeed={70}
-                        backSpeed={90}
-                        loop
-                    />
-                </h1>
                 <p >
                     <Trans i18nKey="about-me.description-1" components={{ pink: <span className="fw-bold color-pink-diamond" /> }} />
                 </p>
@@ -34,7 +34,7 @@ const AboutMe: React.FC = () => {
                     <Trans i18nKey="about-me.description-2" components={{ pink: <span className="fw-bold color-pink-diamond" /> }} />
                 </p>
             </div>
-            <div className="col-md-3 col-12 d-flex justify-content-center" data-aos="fade-up" data-aos-duration="1000">
+            <div className="col-lg-3 col-md-6 col-12 d-flex justify-content-center" data-aos="fade-up" data-aos-duration="1000">
                 <div className="about-me-image-container">
                     <div className="main-image w-100 h-100 position-relative z-1"></div>
                     <div className="light-on main-image-frame w-100 h-100"></div>

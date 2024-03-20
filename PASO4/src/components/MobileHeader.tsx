@@ -14,7 +14,7 @@ const MobileHeader: React.FC = () => {
 
     return (
         <>
-            <div className={`container-fluid bg-glassmorphism position-fixed z-2 p-5 h-100 d-lg-none ${show ? "modal-menu-mobile" : "modal-menu-mobile-active"}`}>
+            <div className={`container-fluid bg-glassmorphism position-fixed z-2 p-5 h-100 d-xl-none ${show ? "modal-menu-mobile" : "modal-menu-mobile-active"}`}>
                 <div className="row d-flex flex-column justify-content-around align-items-center h-100">
                     <div className="col-12 text-center">
                         <a href="/">
@@ -43,7 +43,7 @@ const MobileHeader: React.FC = () => {
                 </div>
             </div >
 
-            <nav className="p-4 sticky-top z-2 d-lg-none">
+            <nav className="p-4 sticky-top z-2 d-xl-none">
                 <div className="container-fluid">
                     <div className="row">
                         <div className="col-12 d-flex justify-content-between align-items-center">

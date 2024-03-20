@@ -1,5 +1,11 @@
 {
+    "cover":{
+        "hello":"Hello World!",
+        "subtitle":"My name is <pink>Thomas</pink>",
+        "scroll":"<pink>Scroll down</pink> to know more about me and my work"
+    },
     "navbar":{
+        "home":"Home",
         "about":"About me",
         "stack":"Stack",
         "projects":"Projects",
@@ -7,7 +13,6 @@
     },
     "about-me":{
         "hi":"Hi!",
-        "name":"My name is Thomas",
         "im":"I'm",
         "typed-strings": [
             "a Fullstack Developer",

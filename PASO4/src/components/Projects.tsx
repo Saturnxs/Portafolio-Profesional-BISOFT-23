@@ -20,13 +20,15 @@ const Contact: React.FC = () => {
 
     return (
         <>
-            <div className="row justify-content-center align-items-center min-vh-90" id="projects">
+            <div className="row justify-content-center align-items-center min-vh-100" id="projects">
                 <div className="col-md-11 col-12" data-aos="fade-up" data-aos-duration="1000">
                     <div className="row py-5 justify-content-center">
                         <div className="col-md-5 col-12">
-                            <TitlePlanet
-                                imgRoute={MarsIcon}
-                                title={t("navbar.projects")} />
+                            <div className="d-flex justify-content-center">
+                                <TitlePlanet
+                                    imgRoute={MarsIcon}
+                                    title={t("navbar.projects")} />
+                            </div>
                             <p className="text-white text-center">
                                 <Trans i18nKey="projects.intro" components={{ pink: <span className="fw-bold color-pink-diamond" /> }} />
                             </p>

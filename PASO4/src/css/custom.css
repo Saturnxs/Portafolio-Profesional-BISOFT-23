@@ -39,11 +39,16 @@ html {
 }
 
 body {
-  background-image: url("../assets/img/SPA.jpg");
-  background-size: cover;
-  background-position: top center;
-  background-repeat: no-repeat;
+  background-color: var(--deep-space);
   font-family: "Montserrat", sans-serif;
+}
+
+.main-content {
+  background-color: var(--deep-space);
+  background-image: url("../assets/img/SPA.jpg");
+  background-repeat: no-repeat;
+  background-position: 100% 100vh;
+  background-size: cover;
 }
 
 h1 {
@@ -142,10 +147,6 @@ h2 {
   font-weight: 900;
 }
 
-.min-vh-90 {
-  min-height: 90vh;
-}
-
 .light-on {
   filter: var(--glow-effect);
   transition: filter 0.2s ease-in-out;
@@ -228,8 +229,17 @@ h2 {
   transition: all 0.3s ease-in-out;
 }
 
-.navbar .active {
+#navbarTop .active {
   filter: var(--glow-effect);
+}
+
+.fixed-header {
+  position: fixed;
+}
+
+.img-navbar {
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
 }
 
 /********** ABOUT ME **********/
@@ -250,7 +260,7 @@ h2 {
   transform: translate(10%, -90%);
 }
 
-#me h1 {
+.typed {
   height: 8rem;
 }
 
@@ -382,19 +392,20 @@ h2 {
 }
 
 /********** RESPONSIVE **********/
-
 @media screen and (max-width: 768px) {
   .body-icons {
     width: 50px;
   }
 
-  #me h1 {
-    height: 6rem;
-  }
-
   .scroll-to-top {
     bottom: 25px !important;
     right: 25px !important;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .typed {
+    height: 11rem;
   }
 }
 

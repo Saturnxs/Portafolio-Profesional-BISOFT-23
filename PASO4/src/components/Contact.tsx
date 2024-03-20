@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import emailjs from "@emailjs/browser";
-import EarthIcon from "../assets/svg/earth-icon.svg"
+import UranusIcon from "../assets/svg/uranus-icon.svg";
 import CVEn from "../assets/download/ThomasBM-CV-EN.pdf"
 import CVEs from "../assets/download/ThomasBM-CV-ES.pdf"
 import TitlePlanet from "./TitlePlanet"
@@ -72,13 +72,15 @@ const Contact: React.FC = () => {
     }
 
     return (
-        <div className="row justify-content-center align-items-center min-vh-90" id="contact">
+        <div className="row justify-content-center align-items-center min-vh-100" id="contact">
             <div className="col-md-12 col-11 px-md-5">
                 <div className="row py-3 py-md-5 justify-content-center">
                     <div className="col-md-5 col-12" data-aos="fade-up" data-aos-duration="1000">
-                        <TitlePlanet
-                            imgRoute={EarthIcon}
-                            title={t("navbar.contact")} />
+                        <div className="d-flex justify-content-center">
+                            <TitlePlanet
+                                imgRoute={UranusIcon}
+                                title={t("navbar.contact")} />
+                        </div>
                         <p className="text-white text-center">
                             <Trans i18nKey="contact.intro" components={{ pink: <span className="fw-bold color-pink-diamond" /> }} />
                         </p>

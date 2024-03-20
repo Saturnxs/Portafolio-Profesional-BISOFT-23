@@ -11,8 +11,6 @@ export const loadScroll = () => {
   });
 };
 
-window.addEventListener("scroll", loadScroll);
-
 export const loadScrollModal = () => {
   const modalProject = document.querySelector(".modal-project");
   const elementosSticky = document.querySelectorAll(".sticky-top");
@@ -34,3 +32,26 @@ export const scrollToElementById = (id: string) => {
   const element = document.getElementById(id);
   element?.scrollIntoView({ behavior: "smooth" });
 };
+
+const turnNavBarIntoFixed = () => {
+  const nav = document.querySelector(".to-fixed");
+  const navImg = document.querySelector(".img-navbar") as HTMLImageElement;
+  if (window.scrollY >= window.innerHeight * 0.85) {
+    nav?.classList.add("fixed-header");
+    if (navImg) {
+      navImg.style.opacity = "1";
+    }
+  } else {
+    nav?.classList.remove("fixed-header");
+    if (navImg) {
+      navImg.style.opacity = "0";
+    }
+  }
+};
+
+const manageScroll = () => {
+  loadScroll();
+  turnNavBarIntoFixed();
+};
+
+window.addEventListener("scroll", manageScroll);

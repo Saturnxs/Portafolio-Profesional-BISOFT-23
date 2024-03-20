@@ -3,6 +3,7 @@ import SaturnIcon from '../assets/svg/saturn-icon.svg';
 import JupiterIcon from '../assets/svg/jupiter-icon.svg';
 import MarsIcon from '../assets/svg/mars-icon.svg';
 import EarthIcon from '../assets/svg/earth-icon.svg';
+import UranusIcon from '../assets/svg/uranus-icon.svg';
 import { useTranslation } from 'react-i18next';
 import { scrollToElementById } from '../utils/utils';
 
@@ -10,14 +11,18 @@ const TopNavBar: React.FC = () => {
     const [t, i18n] = useTranslation();
 
     return (
-        <div className="container-fluid sticky-top py-2 z-3 d-none d-lg-block">
+        <div className="container-fluid sticky-top py-2 z-3 d-none d-xl-block to-fixed">
             <div className="row justify-content-start align-items-center p-2">
                 <div className="col-1 text-center">
-                    <a href="/">
+                    <a href="#cover" className="img-navbar">
                         <img alt='Home' src={ThomasLogo} className="w-50 light-on" />
                     </a>
                 </div>
-                <div className="navbar col-10 d-flex justify-content-center">
+                <div className="col-10 d-flex justify-content-center" id="navbarTop">
+                    <a href="#cover" role="button" className="px-4 text-decoration-none fw-bold text-white d-flex align-items-center hover-light-on" onClick={() => scrollToElementById("cover")}>
+                        <img src={EarthIcon} className="menu-icons text-white" />
+                        <span className="px-3">{t("navbar.home")}</span>
+                    </a>
                     <a href="#me" role="button" className="px-4 text-decoration-none fw-bold text-white d-flex align-items-center hover-light-on" onClick={() => scrollToElementById("me")}>
                         <img src={SaturnIcon} className="menu-icons text-white" />
                         <span className="px-3">{t("navbar.about")} </span>
@@ -31,7 +36,7 @@ const TopNavBar: React.FC = () => {
                         <span className="px-3">{t("navbar.projects")}</span>
                     </a>
                     <a href="#contact" role="button" className="px-4 text-decoration-none fw-bold text-white d-flex align-items-center hover-light-on" onClick={() => scrollToElementById("contact")}>
-                        <img src={EarthIcon} className="menu-icons text-white" />
+                        <img src={UranusIcon} className="menu-icons text-white" />
                         <span className="px-3">{t("navbar.contact")}</span>
                     </a>
                 </div>
