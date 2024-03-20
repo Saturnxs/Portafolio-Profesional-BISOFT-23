@@ -2,7 +2,7 @@
     "cover":{
         "hello":"¡Hola Mundo!",
         "subtitle":"Mi nombre es <pink>Thomas</pink>",
-        "scroll":"<pink>Desplázate hacia abajo</pink> para conocer más sobre mí y mi trabajo"
+        "scroll":"Te invito a conocer mi perfil profesional y mis proyectos. <pink>Desplázate hacia abajo</pink> para comenzar."
     },
     "navbar":{
         "home":"Inicio",

@@ -28,8 +28,8 @@ const Cover: React.FC = () => {
             <div className="row justify-content-center pt-5">
                 <div className="col-sm-8 col-12 text-center">
                     <h3 className="text-white"><Trans i18nKey="cover.scroll" components={{ pink: <span className="fw-bold color-pink-diamond" /> }} /></h3>
-                    <a role="button" className="text-white" href='#me' onClick={e => scrollToElement(e)}>
-                        <FaAnglesDown className="text-white mt-4 fs-1 light-on" />
+                    <a role="button" href='#me' onClick={e => scrollToElement(e)}>
+                        <FaAnglesDown className="text-white mt-4 fs-1 light-on floating-animation" />
                     </a>
                 </div>
             </div>

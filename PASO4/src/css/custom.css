@@ -95,6 +95,23 @@ h2 {
   z-index: 1 !important;
 }
 
+.floating-animation {
+  transform: translateY(-10%);
+  animation: floater 2s infinite;
+  transition: ease 0.9s;
+}
+
+@keyframes floater {
+  0% {
+    transform: translateY(-10%);
+    transition: ease 0.9s;
+  }
+  50% {
+    transform: translateY(10%);
+    transition: ease 0.9s;
+  }
+}
+
 /********** TEXT COLORS **********/
 .color-pink-diamond {
   color: var(--pink-diamond);
