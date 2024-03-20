@@ -5,7 +5,7 @@ import MarsIcon from '../assets/svg/mars-icon.svg';
 import EarthIcon from '../assets/svg/earth-icon.svg';
 import UranusIcon from '../assets/svg/uranus-icon.svg';
 import { useTranslation } from 'react-i18next';
-import { scrollToElementById } from '../utils/utils';
+import { scrollToElement } from '../utils/utils';
 
 const TopNavBar: React.FC = () => {
     const [t, i18n] = useTranslation();
@@ -19,23 +19,23 @@ const TopNavBar: React.FC = () => {
                     </a>
                 </div>
                 <div className="col-10 d-flex justify-content-center" id="navbarTop">
-                    <a href="#cover" role="button" className="px-4 text-decoration-none fw-bold text-white d-flex align-items-center hover-light-on" onClick={() => scrollToElementById("cover")}>
+                    <a href="#cover" role="button" className="px-4 text-decoration-none fw-bold text-white d-flex align-items-center hover-light-on" onClick={e => scrollToElement(e)}>
                         <img src={EarthIcon} className="menu-icons text-white" />
                         <span className="px-3">{t("navbar.home")}</span>
                     </a>
-                    <a href="#me" role="button" className="px-4 text-decoration-none fw-bold text-white d-flex align-items-center hover-light-on" onClick={() => scrollToElementById("me")}>
+                    <a href="#me" role="button" className="px-4 text-decoration-none fw-bold text-white d-flex align-items-center hover-light-on" onClick={e => scrollToElement(e)}>
                         <img src={SaturnIcon} className="menu-icons text-white" />
                         <span className="px-3">{t("navbar.about")} </span>
                     </a>
-                    <a href="#stack" role="button" className="px-4 text-decoration-none fw-bold text-white d-flex align-items-center hover-light-on" onClick={() => scrollToElementById("stack")}>
+                    <a href="#stack" role="button" className="px-4 text-decoration-none fw-bold text-white d-flex align-items-center hover-light-on" onClick={e => scrollToElement(e)}>
                         <img src={JupiterIcon} className="menu-icons text-white" />
                         <span className="px-3">{t("navbar.stack")}</span>
                     </a>
-                    <a href="#projects" role="button" className="px-4 text-decoration-none fw-bold text-white d-flex align-items-center hover-light-on" onClick={() => scrollToElementById("projects")}>
+                    <a href="#projects" role="button" className="px-4 text-decoration-none fw-bold text-white d-flex align-items-center hover-light-on" onClick={e => scrollToElement(e)}>
                         <img src={MarsIcon} className="menu-icons text-white" />
                         <span className="px-3">{t("navbar.projects")}</span>
                     </a>
-                    <a href="#contact" role="button" className="px-4 text-decoration-none fw-bold text-white d-flex align-items-center hover-light-on" onClick={() => scrollToElementById("contact")}>
+                    <a href="#contact" role="button" className="px-4 text-decoration-none fw-bold text-white d-flex align-items-center hover-light-on" onClick={e => scrollToElement(e)}>
                         <img src={UranusIcon} className="menu-icons text-white" />
                         <span className="px-3">{t("navbar.contact")}</span>
                     </a>

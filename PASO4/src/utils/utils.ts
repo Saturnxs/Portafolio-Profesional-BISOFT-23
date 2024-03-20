@@ -28,9 +28,17 @@ export const loadScrollModal = () => {
   });
 };
 
-export const scrollToElementById = (id: string) => {
-  const element = document.getElementById(id);
-  element?.scrollIntoView({ behavior: "smooth" });
+export const scrollToElement = (event: React.MouseEvent<HTMLAnchorElement>) => {
+  console.log(event);
+  const href = event.currentTarget.getAttribute("href");
+  const offsetTop = document.getElementById(
+    href?.substring(1) || ""
+  )?.offsetTop;
+  event.preventDefault();
+  window.scrollTo({
+    top: offsetTop,
+    behavior: "smooth",
+  });
 };
 
 const turnNavBarIntoFixed = () => {

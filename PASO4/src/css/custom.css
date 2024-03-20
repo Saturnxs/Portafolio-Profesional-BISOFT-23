@@ -172,6 +172,11 @@ h2 {
   border-radius: 20px;
 }
 
+.btn-none {
+  background-color: transparent;
+  border: none;
+}
+
 .button-white-to-pink {
   background-color: transparent;
   border-radius: 15px;

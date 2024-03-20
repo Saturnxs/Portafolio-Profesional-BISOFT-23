@@ -2,7 +2,7 @@ import { FaBars, FaXmark } from "react-icons/fa6";
 import { useState, useEffect } from "react";
 import ThomasLogo from "../assets/svg/thomas-logo.svg";
 import { useTranslation } from 'react-i18next';
-import { scrollToElementById } from "../utils/utils";
+import { scrollToElement } from "../utils/utils";
 
 const MobileHeader: React.FC = () => {
     const [t, i18n] = useTranslation();
@@ -22,16 +22,16 @@ const MobileHeader: React.FC = () => {
                         </a>
                     </div>
                     <div className="navbar col-12 d-flex flex-column justify-content-center align-items-center fs-5 fw-bold">
-                        <a href="#me" role="button" className="py-2 text-decoration-none text-white" onClick={() => { setShow(!show); scrollToElementById("me") }}>
+                        <a href="#me" role="button" className="py-2 text-decoration-none text-white" onClick={e => { setShow(!show); scrollToElement(e) }}>
                             {t("navbar.about")}
                         </a>
-                        <a href="#stack" role="button" className="py-2 text-decoration-none text-white" onClick={() => { setShow(!show); scrollToElementById("stack") }}>
+                        <a href="#stack" role="button" className="py-2 text-decoration-none text-white" onClick={e => { setShow(!show); scrollToElement(e) }}>
                             {t("navbar.stack")}
                         </a>
-                        <a href="#projects" role="button" className="py-2 text-decoration-none text-white" onClick={() => { setShow(!show); scrollToElementById("projects") }}>
+                        <a href="#projects" role="button" className="py-2 text-decoration-none text-white" onClick={e => { setShow(!show); scrollToElement(e) }}>
                             {t("navbar.projects")}
                         </a>
-                        <a href="#contact" role="button" className="py-2 text-decoration-none text-white" onClick={() => { setShow(!show); scrollToElementById("contact") }}>
+                        <a href="#contact" role="button" className="py-2 text-decoration-none text-white" onClick={e => { setShow(!show); scrollToElement(e) }}>
                             {t("navbar.contact")}
                         </a>
                     </div>
