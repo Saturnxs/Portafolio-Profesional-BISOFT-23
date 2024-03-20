@@ -24,14 +24,10 @@ const Contact: React.FC = () => {
                 <div className="col-md-11 col-12" data-aos="fade-up" data-aos-duration="1000">
                     <div className="row py-5 justify-content-center">
                         <div className="col-md-5 col-12">
-                            <div className="d-flex justify-content-center">
-                                <TitlePlanet
-                                    imgRoute={MarsIcon}
-                                    title={t("navbar.projects")} />
-                            </div>
-                            <p className="text-white text-center">
-                                <Trans i18nKey="projects.intro" components={{ pink: <span className="fw-bold color-pink-diamond" /> }} />
-                            </p>
+                            <TitlePlanet
+                                imgRoute={MarsIcon}
+                                title={t("navbar.projects")}
+                                subtext={<Trans i18nKey="projects.intro" components={{ pink: <span className="fw-bold color-pink-diamond" /> }} />} />
                         </div>
                     </div>
                     <div className="row justify-content-center">

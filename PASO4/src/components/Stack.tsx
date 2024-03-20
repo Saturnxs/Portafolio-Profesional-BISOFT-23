@@ -22,14 +22,10 @@ const Stack: React.FC = () => {
             <div className="col-12">
                 <div className="row py-5 justify-content-center" data-aos="fade-up" data-aos-duration="1000">
                     <div className="col-md-5 col-12">
-                        <div className="d-flex justify-content-center">
-                            <TitlePlanet
-                                imgRoute={JupiterIcon}
-                                title={t("navbar.stack")} />
-                        </div>
-                        <p className="text-white text-center">
-                            <Trans i18nKey="stack.intro" components={{ pink: <span className="fw-bold color-pink-diamond" /> }} />
-                        </p>
+                        <TitlePlanet
+                            imgRoute={JupiterIcon}
+                            title={t("navbar.stack")}
+                            subtext={<Trans i18nKey="stack.intro" components={{ pink: <span className="fw-bold color-pink-diamond" /> }} />} />
                     </div>
                 </div>
                 <div className="row justify-content-center">
