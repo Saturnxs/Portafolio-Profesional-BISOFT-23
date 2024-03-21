@@ -56,13 +56,13 @@ const AboutMe: React.FC = () => {
                     <div className="col-md-5 text-center pt-5 pt-md-0">
                         <a href="https://www.ucenfotec.ac.cr/" target="_blank" className="text-decoration-none">
                             <h5 className="m-0 fw-bold text-white d-md-none d-block pb-4"><Trans t={t} i18nKey="about-me.excellence" components={{ pink: <span className="color-pink-diamond" /> }} /></h5>
-                            <img src={CenfoLogo} className="w-75 px-0 px-lg-5 hover-light-on" />
+                            <img src={CenfoLogo} className="w-75 px-0 px-lg-5" />
                         </a>
                     </div>
                     <div className="col-md-5 text-center pt-5 pt-md-0">
                         <a href="https://picoegallo.com/" target="_blank" className="text-decoration-none">
                             <h5 className="m-0 fw-bold text-white d-md-none d-block pb-4"><Trans t={t} i18nKey="about-me.expectations" components={{ pink: <span className="color-pink-diamond" /> }} /></h5>
-                            <img src={PicoEGalloLogo} className="w-75 px-0 px-lg-5 to-white-filter hover-light-on" />
+                            <img src={PicoEGalloLogo} className="w-75 px-0 px-lg-5 to-white-filter" />
                         </a>
                     </div>
                 </div>

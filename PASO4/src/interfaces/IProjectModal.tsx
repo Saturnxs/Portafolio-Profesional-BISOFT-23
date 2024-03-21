@@ -2,12 +2,17 @@ import { IconType } from "react-icons/lib";
 
 interface IProjectModal {
     title: string;
-    subtitle: string;
+    subtitle: string | JSX.Element;
     year: string;
     stack: { name: string, icon: IconType }[];
     description: JSX.Element;
     images?: string[];
-    links?: { title: string, text: string, url: string, icon: IconType }[];
+    links?: {
+        title: string | JSX.Element,
+        text: string,
+        url: string,
+        icon: IconType
+    }[];
     onClose: () => void;
 }
 
