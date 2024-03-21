@@ -8,12 +8,15 @@ import { useEffect, useState } from "react";
 const Contact: React.FC = () => {
     const { t } = useTranslation();
     const [loadedProjects, setLoadedProjects] = useState(3);
+    const [projectsToLoad, setProjectsToLoad] = useState(3);
 
     useEffect(() => {
         const width = window.innerWidth;
         if (width <= 992) {
-            setLoadedProjects(4);
+            setProjectsToLoad(2);
+            setLoadedProjects(2);
         } else {
+            setProjectsToLoad(3);
             setLoadedProjects(3);
         }
     }, []);
@@ -42,7 +45,7 @@ const Contact: React.FC = () => {
                                     <Trans t={t} i18nKey="projects.button-close" />
                                 </button>
                                 :
-                                <button className="button-pink-to-white" onClick={() => setLoadedProjects(loadedProjects + 3)}>
+                                <button className="button-pink-to-white" onClick={() => setLoadedProjects(loadedProjects + projectsToLoad)}>
                                     <Trans t={t} i18nKey="projects.button" />
                                 </button>
                             }

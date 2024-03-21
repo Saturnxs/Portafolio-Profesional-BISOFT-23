@@ -17,11 +17,14 @@ const MobileHeader: React.FC = () => {
             <div className={`container-fluid bg-glassmorphism position-fixed z-2 p-5 h-100 d-xl-none ${show ? "modal-menu-mobile" : "modal-menu-mobile-active"}`}>
                 <div className="row d-flex flex-column justify-content-around align-items-center h-100">
                     <div className="col-12 text-center">
-                        <a href="/">
+                        <a href="#cover">
                             <img alt='Home' src={ThomasLogo} className="body-icons light-on" />
                         </a>
                     </div>
                     <div className="navbar col-12 d-flex flex-column justify-content-center align-items-center fs-5 fw-bold">
+                        <a href="#cover" role="button" className="py-2 text-decoration-none text-white" onClick={e => { setShow(!show); scrollToElement(e) }}>
+                            <Trans t={t} i18nKey="navbar.home" />
+                        </a>
                         <a href="#me" role="button" className="py-2 text-decoration-none text-white" onClick={e => { setShow(!show); scrollToElement(e) }}>
                             <Trans t={t} i18nKey="navbar.about" />
                         </a>

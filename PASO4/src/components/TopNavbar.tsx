@@ -4,7 +4,7 @@ import JupiterIcon from '../assets/svg/jupiter-icon.svg';
 import MarsIcon from '../assets/svg/mars-icon.svg';
 import EarthIcon from '../assets/svg/earth-icon.svg';
 import UranusIcon from '../assets/svg/uranus-icon.svg';
-import { useTranslation } from 'react-i18next';
+import { Trans, useTranslation } from 'react-i18next';
 import { scrollToElement } from '../utils/utils';
 
 const TopNavBar: React.FC = () => {
@@ -21,23 +21,33 @@ const TopNavBar: React.FC = () => {
                 <div className="col-10 d-flex justify-content-center" id="navbarTop">
                     <a href="#cover" role="button" className="px-4 text-decoration-none fw-bold text-white d-flex align-items-center hover-light-on" onClick={e => scrollToElement(e)}>
                         <img src={EarthIcon} className="menu-icons text-white" />
-                        <span className="px-3">{t("navbar.home")}</span>
+                        <span className="px-3">
+                            <Trans t={t} i18nKey="navbar.home" />
+                        </span>
                     </a>
                     <a href="#me" role="button" className="px-4 text-decoration-none fw-bold text-white d-flex align-items-center hover-light-on" onClick={e => scrollToElement(e)}>
                         <img src={SaturnIcon} className="menu-icons text-white" />
-                        <span className="px-3">{t("navbar.about")} </span>
+                        <span className="px-3">
+                            <Trans t={t} i18nKey="navbar.about" />
+                        </span>
                     </a>
                     <a href="#stack" role="button" className="px-4 text-decoration-none fw-bold text-white d-flex align-items-center hover-light-on" onClick={e => scrollToElement(e)}>
                         <img src={JupiterIcon} className="menu-icons text-white" />
-                        <span className="px-3">{t("navbar.stack")}</span>
+                        <span className="px-3">
+                            <Trans t={t} i18nKey="navbar.stack" />
+                        </span>
                     </a>
                     <a href="#projects" role="button" className="px-4 text-decoration-none fw-bold text-white d-flex align-items-center hover-light-on" onClick={e => scrollToElement(e)}>
                         <img src={MarsIcon} className="menu-icons text-white" />
-                        <span className="px-3">{t("navbar.projects")}</span>
+                        <span className="px-3">
+                            <Trans t={t} i18nKey="navbar.projects" />
+                        </span>
                     </a>
                     <a href="#contact" role="button" className="px-4 text-decoration-none fw-bold text-white d-flex align-items-center hover-light-on" onClick={e => scrollToElement(e)}>
                         <img src={UranusIcon} className="menu-icons text-white" />
-                        <span className="px-3">{t("navbar.contact")}</span>
+                        <span className="px-3">
+                            <Trans t={t} i18nKey="navbar.contact" />
+                        </span>
                     </a>
                 </div>
                 <div className="col-1 text-center">
