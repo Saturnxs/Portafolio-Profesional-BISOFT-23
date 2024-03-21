@@ -6,7 +6,6 @@ import projects_es from "../data/translations/es/projects.json";
 import projects_en from "../data/translations/en/projects.json";
 
 // i18n configuration
-// TODO: Use only Trans component to change language in all the app
 i18next.use(initReactI18next).init({
   interpolation: {
     escapeValue: false,

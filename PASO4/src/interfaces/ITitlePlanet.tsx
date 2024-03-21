@@ -1,6 +1,6 @@
 interface ITitlePlanet {
     imgRoute: string;
-    title: string;
+    title: string | JSX.Element;
     subtext?: string | JSX.Element;
 }
 

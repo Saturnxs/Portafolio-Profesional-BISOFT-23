@@ -26,8 +26,8 @@ const Contact: React.FC = () => {
                         <div className="col-md-5 col-12">
                             <TitlePlanet
                                 imgRoute={MarsIcon}
-                                title={t("navbar.projects")}
-                                subtext={<Trans i18nKey="projects.intro" components={{ pink: <span className="fw-bold color-pink-diamond" /> }} />} />
+                                title={<Trans t={t} i18nKey="navbar.projects" />}
+                                subtext={<Trans t={t} i18nKey="projects.intro" components={{ pink: <span className="fw-bold color-pink-diamond" /> }} />} />
                         </div>
                     </div>
                     <div className="row justify-content-center">
@@ -39,11 +39,11 @@ const Contact: React.FC = () => {
                         <div className="col-12 text-center py-5" data-aos="fade-up" data-aos-duration="1000">
                             {loadedProjects >= ProjectList().length ?
                                 <button className="button-pink-to-white" onClick={() => setLoadedProjects(3)}>
-                                    {t("projects.button-close")}
+                                    <Trans t={t} i18nKey="projects.button-close" />
                                 </button>
                                 :
                                 <button className="button-pink-to-white" onClick={() => setLoadedProjects(loadedProjects + 3)}>
-                                    {t("projects.button")}
+                                    <Trans t={t} i18nKey="projects.button" />
                                 </button>
                             }
                         </div >

@@ -12,12 +12,12 @@ const AboutMe: React.FC = () => {
             <div className="col-md-6 col-12 text-white" data-aos="fade-up" data-aos-duration="1000">
                 <div>
                     <h1>
-                        {t("about-me.hi")}
+                        <Trans t={t} i18nKey="about-me.hi" components={{ pink: <span className="color-pink-diamond" /> }} />
                         <span className="px-3 align-bottom"><img src={SaturnIcon} className="body-icons light-on" /></span>
                     </h1>
                     <h1 className="typed">
                         <span className="light-on py-4 mb-4">
-                            {t("about-me.im")} <ReactTyped
+                            <Trans t={t} i18nKey="about-me.im" /> <ReactTyped
                                 strings={t("about-me.typed-strings", { returnObjects: true }) as string[]}
                                 typeSpeed={70}
                                 backSpeed={90}
@@ -26,12 +26,11 @@ const AboutMe: React.FC = () => {
                         </span>
                     </h1>
                 </div>
-                <p >
-                    <Trans i18nKey="about-me.description-1" components={{ pink: <span className="fw-bold color-pink-diamond" /> }} />
+                <p>
+                    <Trans t={t} i18nKey="about-me.description-1" components={{ pink: <span className="fw-bold color-pink-diamond" /> }} />
                 </p>
-
-                <p >
-                    <Trans i18nKey="about-me.description-2" components={{ pink: <span className="fw-bold color-pink-diamond" /> }} />
+                <p>
+                    <Trans t={t} i18nKey="about-me.description-2" components={{ pink: <span className="fw-bold color-pink-diamond" /> }} />
                 </p>
             </div>
             <div className="col-lg-3 col-md-6 col-12 d-flex justify-content-center" data-aos="fade-up" data-aos-duration="1000">
@@ -44,25 +43,25 @@ const AboutMe: React.FC = () => {
                 <div className="row justify-content-evenly text-white d-none d-md-flex">
                     <div className="col-4 text-center">
                         <h5 className="m-0 fw-bold">
-                            <Trans i18nKey="about-me.excellence" components={{ pink: <span className="color-pink-diamond" /> }} />
+                            <Trans t={t} i18nKey="about-me.excellence" components={{ pink: <span className="color-pink-diamond" /> }} />
                         </h5>
                     </div>
                     <div className="col-4 text-center">
                         <h5 className="m-0 fw-bold">
-                            <Trans i18nKey="about-me.expectations" components={{ pink: <span className="color-pink-diamond" /> }} />
+                            <Trans t={t} i18nKey="about-me.expectations" components={{ pink: <span className="color-pink-diamond" /> }} />
                         </h5>
                     </div>
                 </div>
                 <div className="row pt-5 pt-md-0 justify-content-evenly text-white align-items-center">
                     <div className="col-md-5 text-center pt-5 pt-md-0">
                         <a href="https://www.ucenfotec.ac.cr/" target="_blank" className="text-decoration-none">
-                            <h5 className="m-0 fw-bold text-white d-md-none d-block pb-4">Embracing <span className="color-pink-diamond">excellence</span> at</h5>
+                            <h5 className="m-0 fw-bold text-white d-md-none d-block pb-4"><Trans t={t} i18nKey="about-me.excellence" components={{ pink: <span className="color-pink-diamond" /> }} /></h5>
                             <img src={CenfoLogo} className="w-75 px-0 px-lg-5 hover-light-on" />
                         </a>
                     </div>
                     <div className="col-md-5 text-center pt-5 pt-md-0">
                         <a href="https://picoegallo.com/" target="_blank" className="text-decoration-none">
-                            <h5 className="m-0 fw-bold text-white d-md-none d-block pb-4">Challenging <span className="color-pink-diamond">expectations</span> at</h5>
+                            <h5 className="m-0 fw-bold text-white d-md-none d-block pb-4"><Trans t={t} i18nKey="about-me.expectations" components={{ pink: <span className="color-pink-diamond" /> }} /></h5>
                             <img src={PicoEGalloLogo} className="w-75 px-0 px-lg-5 to-white-filter hover-light-on" />
                         </a>
                     </div>

@@ -65,7 +65,7 @@ const ProjectsList: () => IProject[] = () => {
     return [
         {
             title: "ISAAC",
-            subtitle: t("isaac.subtitle"),
+            subtitle: <Trans t={t} i18nKey="isaac.subtitle" />,
             icon: "",
             year: "2023",
             stack: [
@@ -102,7 +102,7 @@ const ProjectsList: () => IProject[] = () => {
                     icon: SiGithub
                 }
             ],
-            shortDescription: t("isaac.short-description"),
+            shortDescription: <Trans t={t} i18nKey="isaac.short-description" />,
             description: <Trans i18nKey="isaac.description" ns="projects" components={{ h3: <h3 className="fw-bold" />, p: <p /> }} />,
             images: [
                 IsaacBanner
@@ -110,13 +110,13 @@ const ProjectsList: () => IProject[] = () => {
             links: [
                 {
                     icon: BiGlobe,
-                    title: t("isaac.links.news"),
+                    title: <Trans t={t} i18nKey="isaac.links.news" />,
                     text: "so.ucr.ac.cr",
                     url: "https://www.so.ucr.ac.cr/es/noticia/estudiantes-de-ingenieria-industrial-resultaron-ganadores-del-programa-de-innovacion"
                 },
                 {
                     icon: SiYoutube,
-                    title: t("isaac.links.video"),
+                    title: <Trans t={t} i18nKey="isaac.links.video" />,
                     text: "ISAAC - Video",
                     url: "https://www.youtube.com/watch?v=_Bfynmz3pck"
                 }
@@ -124,7 +124,7 @@ const ProjectsList: () => IProject[] = () => {
         },
         {
             title: "Cenfoteco Kingdoms",
-            subtitle: t("cenfoteco.subtitle"),
+            subtitle: <Trans t={t} i18nKey="cenfoteco.subtitle" />,
             icon: "",
             year: "2023",
             stack: [
@@ -137,7 +137,7 @@ const ProjectsList: () => IProject[] = () => {
                     icon: SiGithub
                 }
             ],
-            shortDescription: t("cenfoteco.short-description"),
+            shortDescription: <Trans t={t} i18nKey="cenfoteco.short-description" />,
             description: <Trans i18nKey="cenfoteco.description" ns="projects" components={{ h3: <h3 className="fw-bold" />, p: <p /> }} />,
             images: [
                 CenfotecoKingdomsBanner
@@ -146,7 +146,7 @@ const ProjectsList: () => IProject[] = () => {
         },
         {
             title: "Horus",
-            subtitle: t("horus.subtitle"),
+            subtitle: <Trans t={t} i18nKey="horus.subtitle" />,
             icon: "",
             year: "2022",
             stack: [
@@ -175,7 +175,7 @@ const ProjectsList: () => IProject[] = () => {
                     icon: SiGithub
                 }
             ],
-            shortDescription: t("horus.short-description"),
+            shortDescription: <Trans t={t} i18nKey="horus.short-description" />,
             description: <Trans i18nKey="horus.description" ns="projects" components={{ h3: <h3 className="fw-bold" />, p: <p /> }} />,
             images: [
                 HorusBanner
@@ -184,7 +184,7 @@ const ProjectsList: () => IProject[] = () => {
         },
         {
             title: "MobyDyg",
-            subtitle: t("mobydyg-1.subtitle"),
+            subtitle: <Trans t={t} i18nKey="mobydyg-1.subtitle" />,
             icon: "",
             year: "2022",
             stack: [
@@ -213,7 +213,7 @@ const ProjectsList: () => IProject[] = () => {
                     icon: SiFigma
                 }
             ],
-            shortDescription: t("mobydyg-1.short-description"),
+            shortDescription: <Trans t={t} i18nKey="mobydyg-1.short-description" />,
             description: <Trans i18nKey="mobydyg-1.description" ns="projects" components={{ h3: <h3 className="fw-bold" />, p: <p /> }} />,
             images: [
                 MobyDygBanner,
@@ -227,7 +227,7 @@ const ProjectsList: () => IProject[] = () => {
         },
         {
             title: "MobyDyg",
-            subtitle: t("mobydyg-2.subtitle"),
+            subtitle: <Trans t={t} i18nKey="mobydyg-2.subtitle" />,
             icon: "",
             year: "2022",
             stack: [
@@ -248,7 +248,7 @@ const ProjectsList: () => IProject[] = () => {
                     icon: SiGithub
                 }
             ],
-            shortDescription: t("mobydyg-2.short-description"),
+            shortDescription: <Trans t={t} i18nKey="mobydyg-2.short-description" />,
             description: <Trans i18nKey="mobydyg-2.description" ns="projects" components={{ h3: <h3 className="fw-bold" />, p: <p /> }} />,
             images: [
                 MobyDygBanner
@@ -257,7 +257,7 @@ const ProjectsList: () => IProject[] = () => {
         },
         {
             title: "Contents Brand Book",
-            subtitle: t("brand-book.subtitle"),
+            subtitle: <Trans t={t} i18nKey="brand-book.subtitle" />,
             icon: "",
             year: "2022",
             stack: [
@@ -270,7 +270,7 @@ const ProjectsList: () => IProject[] = () => {
                     icon: SiAdobeillustrator
                 }
             ],
-            shortDescription: t("brand-book.short-description"),
+            shortDescription: <Trans t={t} i18nKey="brand-book.short-description" />,
             description: <Trans i18nKey="brand-book.description" ns="projects" components={{ h3: <h3 className="fw-bold" />, p: <p /> }} />,
             images: [
                 ContentsBrandBookBanner
@@ -278,7 +278,7 @@ const ProjectsList: () => IProject[] = () => {
             links: [
                 {
                     icon: FaRegFilePdf,
-                    title: t("brand-book.links.download"),
+                    title: <Trans t={t} i18nKey="brand-book.links.download" />,
                     text: "Contents Brand Book.pdf",
                     url: BrandBook
                 }
@@ -286,7 +286,7 @@ const ProjectsList: () => IProject[] = () => {
         },
         {
             title: "Crafting To Do's",
-            subtitle: t("crafting-to-dos.subtitle"),
+            subtitle: <Trans t={t} i18nKey="crafting-to-dos.subtitle" />,
             icon: "",
             year: "2022",
             stack: [
@@ -303,7 +303,7 @@ const ProjectsList: () => IProject[] = () => {
                     icon: SiGithub
                 }
             ],
-            shortDescription: t("crafting-to-dos.short-description"),
+            shortDescription: <Trans t={t} i18nKey="crafting-to-dos.short-description" />,
             description: <Trans i18nKey="crafting-to-dos.description" ns="projects" components={{ h3: <h3 className="fw-bold" />, p: <p /> }} />,
             images: [
                 CrafToDosBanner,
@@ -312,13 +312,13 @@ const ProjectsList: () => IProject[] = () => {
             links: [
                 {
                     icon: BiGlobe,
-                    title: t("crafting-to-dos.links.live"),
+                    title: <Trans t={t} i18nKey="crafting-to-dos.links.live" />,
                     text: "saturnxs.github.io/Crafting-ToDos",
                     url: "https://saturnxs.github.io/Crafting-ToDos/"
                 },
                 {
                     icon: SiGithub,
-                    title: t("crafting-to-dos.links.github"),
+                    title: <Trans t={t} i18nKey="crafting-to-dos.links.github" />,
                     text: "github.com/Saturnxs/Crafting-ToDos",
                     url: "https://github.com/Saturnxs/Crafting-ToDos"
                 }
@@ -326,7 +326,7 @@ const ProjectsList: () => IProject[] = () => {
         },
         {
             title: "Tournament App System",
-            subtitle: t("tournament-app.subtitle"),
+            subtitle: <Trans t={t} i18nKey="tournament-app.subtitle" />,
             icon: "",
             year: "2021",
             stack: [
@@ -351,7 +351,7 @@ const ProjectsList: () => IProject[] = () => {
                     icon: SiFigma
                 }
             ],
-            shortDescription: t("tournament-app.short-description"),
+            shortDescription: <Trans t={t} i18nKey="tournament-app.short-description" />,
             description: <Trans i18nKey="tournament-app.description" ns="projects" components={{ h3: <h3 className="fw-bold" />, p: <p /> }} />,
             images: [
                 FederacionCostarricenseDeTaekwondoBanner,
@@ -362,7 +362,7 @@ const ProjectsList: () => IProject[] = () => {
         },
         {
             title: "Atlas",
-            subtitle: t("atlas.subtitle"),
+            subtitle: <Trans t={t} i18nKey="atlas.subtitle" />,
             icon: "",
             year: "2021",
             stack: [
@@ -395,7 +395,7 @@ const ProjectsList: () => IProject[] = () => {
                     icon: SiFigma
                 }
             ],
-            shortDescription: t("atlas.short-description"),
+            shortDescription: <Trans t={t} i18nKey="atlas.short-description" />,
             description: <Trans i18nKey="atlas.description" ns="projects" components={{ h3: <h3 className="fw-bold" />, p: <p /> }} />,
             images: [
                 AtlasBanner,
@@ -404,7 +404,7 @@ const ProjectsList: () => IProject[] = () => {
             links: [
                 {
                     icon: FaRegFilePdf,
-                    title: t("atlas.links.docs"),
+                    title: <Trans t={t} i18nKey="atlas.links.docs" />,
                     text: "Atlas - Documentación.pdf",
                     url: AtlasDoc
                 }
@@ -412,11 +412,11 @@ const ProjectsList: () => IProject[] = () => {
         },
         {
             title: "Initial Journey 2021",
-            subtitle: t("skem-club.subtitle"),
+            subtitle: <Trans t={t} i18nKey="skem-club.subtitle" />,
             icon: "",
             year: "2021",
             stack: [],
-            shortDescription: t("skem-club.short-description"),
+            shortDescription: <Trans t={t} i18nKey="skem-club.short-description" />,
             description: <Trans i18nKey="skem-club.description" ns="projects" components={{ h3: <h3 className="fw-bold" />, p: <p />, ul: <ul />, li: <li /> }} />,
             images: [
                 SkemClubBanner,
@@ -429,7 +429,7 @@ const ProjectsList: () => IProject[] = () => {
         },
         {
             title: "Wonder",
-            subtitle: t("wonder.subtitle"),
+            subtitle: <Trans t={t} i18nKey="wonder.subtitle" />,
             icon: "",
             year: "2019",
             stack: [
@@ -454,7 +454,7 @@ const ProjectsList: () => IProject[] = () => {
                     icon: SiAdobepremierepro
                 }
             ],
-            shortDescription: t("wonder.short-description"),
+            shortDescription: <Trans t={t} i18nKey="wonder.short-description" />,
             description: <Trans i18nKey="wonder.description" ns="projects" components={{ h3: <h3 className="fw-bold" />, p: <p />, ul: <ul />, li: <li /> }} />,
             images: [
                 WonderBanner,
@@ -470,13 +470,13 @@ const ProjectsList: () => IProject[] = () => {
             links: [
                 {
                     icon: FaBookAtlas,
-                    title: t("wonder.links.docs"),
+                    title: <Trans t={t} i18nKey="wonder.links.docs" />,
                     text: "Wonder - Documentación.pdf",
                     url: "https://www.calameo.com/books/0060693746d1ded536ca7/"
                 },
                 {
                     icon: SiInstagram,
-                    title: t("wonder.links.instagram"),
+                    title: <Trans t={t} i18nKey="wonder.links.instagram" />,
                     text: "_wonder.r",
                     url: "https://www.instagram.com/_wonder.r/"
                 }

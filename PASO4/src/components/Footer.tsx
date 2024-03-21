@@ -11,7 +11,7 @@ const Footer: React.FC = () => {
                 <img className='light-on img-fluid' src={VerticalLogo} alt="Thomas BM" />
             </div>
             <div className="col-10 text-white text-center">
-                <p>{t("footer.crafted-1")} <FaHeart className="light-on" /> <Trans i18nKey="footer.crafted-2" components={{ github: <a href='https://github.com/Saturnxs' target='_blank' rel='noreferrer' className="text-white text-decoration-none hover-light-on"></a> }} />
+                <p><Trans t={t} i18nKey="footer.crafted-1" /> <FaHeart className="light-on" /> <Trans t={t} i18nKey="footer.crafted-2" components={{ github: <a href='https://github.com/Saturnxs' target='_blank' rel='noreferrer' className="text-white text-decoration-none hover-light-on"></a> }} />
                 </p>
                 <p>©2024 Thomas Bermúdez</p>
             </div>

@@ -24,14 +24,14 @@ const Stack: React.FC = () => {
                     <div className="col-md-5 col-12">
                         <TitlePlanet
                             imgRoute={JupiterIcon}
-                            title={t("navbar.stack")}
-                            subtext={<Trans i18nKey="stack.intro" components={{ pink: <span className="fw-bold color-pink-diamond" /> }} />} />
+                            title={<Trans t={t} i18nKey="navbar.stack" />}
+                            subtext={<Trans t={t} i18nKey="stack.intro" components={{ pink: <span className="fw-bold color-pink-diamond" /> }} />} />
                     </div>
                 </div>
                 <div className="row justify-content-center">
                     <div className="col-md-11 col-12 d-flex justify-content-center flex-wrap px-md-5">
                         <div className="text-center px-5 px-md-4" data-aos="fade-up" data-aos-duration="1000">
-                            <h3 className="fw-semibold text-white pb-3">{t("stack.frontend")}</h3>
+                            <h3 className="fw-semibold text-white pb-3"><Trans t={t} i18nKey="stack.frontend" /></h3>
                             <div className="d-flex w-100 justify-content-center align-items-center flex-wrap text-white pb-md-5 pb-4">
                                 <SiBootstrap size={iconsSize} className="mx-3 mb-4" />
                                 <SiJavascript size={iconsSize} className="mx-3 mb-4" />
@@ -40,21 +40,21 @@ const Stack: React.FC = () => {
                             </div>
                         </div>
                         <div className="text-center px-5 px-md-4" data-aos="fade-up" data-aos-duration="1000">
-                            <h3 className="fw-semibold text-white pb-3">{t("stack.backend")}</h3>
+                            <h3 className="fw-semibold text-white pb-3"><Trans t={t} i18nKey="stack.backend" /></h3>
                             <div className="d-flex w-100 justify-content-center align-items-center flex-wrap text-white pb-md-5 pb-4">
                                 <SiPython size={iconsSize} className="mx-3 mb-4" />
                                 <SiNodedotjs size={iconsSize} className="mx-3 mb-4" />
                             </div>
                         </div>
                         <div className="text-center px-5 px-md-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100" data-aos-anchor-placement="top-bottom">
-                            <h3 className="fw-semibold text-white pb-3">{t("stack.database")}</h3>
+                            <h3 className="fw-semibold text-white pb-3"><Trans t={t} i18nKey="stack.database" /></h3>
                             <div className="d-flex w-100 justify-content-center align-items-center flex-wrap text-white pb-md-5 pb-4">
                                 <DiMysql size={iconsSize} className="mx-3 mb-4" />
                                 <DiMsqlServer size={iconsSize} className="mx-3 mb-4" />
                             </div>
                         </div>
                         <div className="text-center px-5 px-md-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200" data-aos-anchor-placement="top-bottom">
-                            <h3 className="fw-semibold text-white pb-3">{t("stack.ml")}</h3>
+                            <h3 className="fw-semibold text-white pb-3"><Trans t={t} i18nKey="stack.ml" /></h3>
                             <div className="d-flex w-100 justify-content-center align-items-center flex-wrap text-white pb-md-5 pb-4">
                                 <SiGooglecolab size={iconsSize} className="mx-3 mb-4" />
                                 <SiOpencv size={iconsSize} className="mx-3 mb-4" />
@@ -62,21 +62,21 @@ const Stack: React.FC = () => {
                             </div>
                         </div>
                         <div className="text-center px-5 px-md-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300" data-aos-anchor-placement="top-bottom">
-                            <h3 className="fw-semibold text-white pb-3">{t("stack.cloud")}</h3>
+                            <h3 className="fw-semibold text-white pb-3"><Trans t={t} i18nKey="stack.cloud" /></h3>
                             <div className="d-flex w-100 justify-content-center align-items-center flex-wrap text-white pb-md-5 pb-4">
                                 <SiAmazonaws size={iconsSize} className="mx-3 mb-4" />
                                 <SiWordpress size={iconsSize} className="mx-3 mb-4" />
                             </div>
                         </div>
                         <div className="text-center px-5 px-md-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400" data-aos-anchor-placement="top-bottom">
-                            <h3 className="fw-semibold text-white pb-3">{t("stack.version")}</h3>
+                            <h3 className="fw-semibold text-white pb-3"><Trans t={t} i18nKey="stack.version" /></h3>
                             <div className="d-flex w-100 justify-content-center align-items-center flex-wrap text-white pb-md-5 pb-4">
                                 <SiGit size={iconsSize} className="mx-3 mb-4" />
                                 <SiGithub size={iconsSize} className="mx-3 mb-4" />
                             </div>
                         </div>
                         <div className="text-center px-5 px-md-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500" data-aos-anchor-placement="top-bottom">
-                            <h3 className="fw-semibold text-white pb-3">{t("stack.design")}</h3>
+                            <h3 className="fw-semibold text-white pb-3"><Trans t={t} i18nKey="stack.design" /></h3>
                             <div className="d-flex w-100 justify-content-center align-items-center flex-wrap text-white pb-md-5 pb-4">
                                 <SiFigma size={iconsSize} className="mx-3 mb-4" />
                                 <SiAdobeillustrator size={iconsSize} className="mx-3 mb-4" />

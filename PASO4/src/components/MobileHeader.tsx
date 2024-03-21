@@ -1,7 +1,7 @@
 import { FaBars, FaXmark } from "react-icons/fa6";
 import { useState, useEffect } from "react";
 import ThomasLogo from "../assets/svg/thomas-logo.svg";
-import { useTranslation } from 'react-i18next';
+import { Trans, useTranslation } from 'react-i18next';
 import { scrollToElement } from "../utils/utils";
 
 const MobileHeader: React.FC = () => {
@@ -23,16 +23,16 @@ const MobileHeader: React.FC = () => {
                     </div>
                     <div className="navbar col-12 d-flex flex-column justify-content-center align-items-center fs-5 fw-bold">
                         <a href="#me" role="button" className="py-2 text-decoration-none text-white" onClick={e => { setShow(!show); scrollToElement(e) }}>
-                            {t("navbar.about")}
+                            <Trans t={t} i18nKey="navbar.about" />
                         </a>
                         <a href="#stack" role="button" className="py-2 text-decoration-none text-white" onClick={e => { setShow(!show); scrollToElement(e) }}>
-                            {t("navbar.stack")}
+                            <Trans t={t} i18nKey="navbar.stack" />
                         </a>
                         <a href="#projects" role="button" className="py-2 text-decoration-none text-white" onClick={e => { setShow(!show); scrollToElement(e) }}>
-                            {t("navbar.projects")}
+                            <Trans t={t} i18nKey="navbar.projects" />
                         </a>
                         <a href="#contact" role="button" className="py-2 text-decoration-none text-white" onClick={e => { setShow(!show); scrollToElement(e) }}>
-                            {t("navbar.contact")}
+                            <Trans t={t} i18nKey="navbar.contact" />
                         </a>
                     </div>
                     <div className="col-12 d-flex justify-content-center">

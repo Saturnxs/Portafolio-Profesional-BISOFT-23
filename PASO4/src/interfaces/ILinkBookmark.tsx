@@ -2,9 +2,9 @@ import { IconType } from "react-icons";
 
 interface ILinkBookmark {
     icon: IconType;
-    title: string;
+    title: string | JSX.Element;
     url: string;
-    urlTitle: string;
+    urlTitle: string | JSX.Element;
 }
 
 export default ILinkBookmark;

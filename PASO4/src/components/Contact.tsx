@@ -78,41 +78,43 @@ const Contact: React.FC = () => {
                     <div className="col-md-5 col-12" data-aos="fade-up" data-aos-duration="1000">
                         <TitlePlanet
                             imgRoute={UranusIcon}
-                            title={t("navbar.contact")}
-                            subtext={<Trans i18nKey="contact.intro" components={{ pink: <span className="fw-bold color-pink-diamond" /> }} />} />
+                            title={<Trans t={t} i18nKey="navbar.contact" />}
+                            subtext={<Trans t={t} i18nKey="contact.intro" components={{ pink: <span className="fw-bold color-pink-diamond" /> }} />} />
                     </div>
                 </div>
                 <div className="row justify-content-center align-items-center">
                     <div className="col-xl-5 col-md-7 col-12 pb-md-0 pb-5 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-duration="1000">
                         <LinkBookmark
                             icon={() => <FaGithub size={iconsSize} />}
-                            title={t("contact.contact-info.github.title")}
+                            title={<Trans t={t} i18nKey="contact.contact-info.github.title" />}
                             url="https://github.com/Saturnxs"
                             urlTitle="github.com/Saturnxs"
                         />
                         <LinkBookmark
                             icon={() => <FaLinkedinIn size={iconsSize} />}
-                            title={t("contact.contact-info.linkedin.title")}
+                            title={<Trans t={t} i18nKey="contact.contact-info.linkedin.title" />}
                             url="https://www.linkedin.com/in/thomas-bermudez-mora"
                             urlTitle="in/thomas-bermudez-mora"
                         />
                         <LinkBookmark
                             icon={() => <FaRegEnvelope size={iconsSize} />}
-                            title={t("contact.contact-info.email.title")}
+                            title={<Trans t={t} i18nKey="contact.contact-info.email.title" />}
                             url="mailto:bmthomas.code@gmail.com"
-                            urlTitle={mobile ? t("contact.contact-info.email.mobile-variant") : "bmthomas.code@gmail.com"}
+                            urlTitle={mobile ?
+                                <Trans t={t} i18nKey="contact.contact-info.email.mobile-variant" />
+                                : "bmthomas.code@gmail.com"}
                         />
                         <LinkBookmark
                             icon={() => <FaWhatsapp size={iconsSize} />}
-                            title={t("contact.contact-info.whatsapp.title")}
+                            title={<Trans t={t} i18nKey="contact.contact-info.whatsapp.title" />}
                             url="https://wa.me/50662536365"
                             urlTitle="wa.me/50662536365"
                         />
                         <LinkBookmark
                             icon={() => <FaRegFilePdf size={iconsSize} />}
-                            title={t("contact.contact-info.cv.title")}
+                            title={<Trans t={t} i18nKey="contact.contact-info.cv.title" />}
                             url={i18n.language === "en" ? CVEn : CVEs}
-                            urlTitle={t("contact.contact-info.cv.url")}
+                            urlTitle={<Trans t={t} i18nKey="contact.contact-info.cv.url" />}
                         />
                     </div>
                     <div className="col-xl-6 col-12" data-aos="fade-up" data-aos-duration="1000">
@@ -123,29 +125,29 @@ const Contact: React.FC = () => {
                             <div className="col-md-6 col-12 mb-4">
                                 <div className="form-floating">
                                     <input type="text" className="form-control bg-transparent text-white fw-bolder" id="nameForm" name="nameForm" placeholder="name@example.com" />
-                                    <label htmlFor="nameForm" className="text-white">{t("contact.contact-form.name")}</label>
+                                    <label htmlFor="nameForm" className="text-white">{<Trans t={t} i18nKey="contact.contact-form.name" />}</label>
                                 </div>
                             </div>
                             <div className="col-md-6 col-12 mb-4">
                                 <div className="form-floating">
                                     <input type="text" className="form-control bg-transparent text-white fw-bolder" id="emailForm" name="emailForm" placeholder="My name is..." />
-                                    <label htmlFor="emailForm" className="text-white">{t("contact.contact-form.email")}</label>
+                                    <label htmlFor="emailForm" className="text-white">{<Trans t={t} i18nKey="contact.contact-form.email" />}</label>
                                 </div>
                             </div>
                             <div className="col-12 mb-4">
                                 <div className="form-floating">
                                     <input type="text" className="form-control bg-transparent text-white fw-bolder" id="subjectForm" name="subjectForm" placeholder="I want to talk about..." />
-                                    <label htmlFor="subjectForm" className="text-white">{t("contact.contact-form.subject")}</label>
+                                    <label htmlFor="subjectForm" className="text-white">{<Trans t={t} i18nKey="contact.contact-form.subject" />}</label>
                                 </div>
                             </div>
                             <div className="col-12 mb-4">
                                 <div className="form-floating">
                                     <textarea className="form-control bg-transparent text-white fw-bolder" placeholder="Leave a comment here" id="messageForm" name="messageForm" style={{ height: "200px", resize: "none" }}></textarea>
-                                    <label htmlFor="messageForm" className="text-white">{t("contact.contact-form.message")}</label>
+                                    <label htmlFor="messageForm" className="text-white">{<Trans t={t} i18nKey="contact.contact-form.message" />}</label>
                                 </div>
                             </div>
                             <div className="col-12 text-center">
-                                <button type="submit" className="button-white-to-pink">{t("contact.contact-form.submit")}</button>
+                                <button type="submit" className="button-white-to-pink">{<Trans t={t} i18nKey="contact.contact-form.submit" />}</button>
                             </div>
                         </form>
                     </div>
