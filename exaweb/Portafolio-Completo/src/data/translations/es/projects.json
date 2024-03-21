@@ -1,0 +1,75 @@
+{
+    "isaac": {
+        "subtitle": "Proyecto de Clasificación de Animales",
+        "short-description": "Un proyecto de visión por computadora para clasificar animales capturados en trampas fotográficas.",
+        "description": "<h3>Acerca de</h3><p>ISAAC es un proyecto dirigido por estudiantes de la Universidad de Costa Rica, ganadores del Programa de Innovación Tecnológica 2022 patrocinado por Grupo AUGE-UCR.</p><p>Este proyecto consiste en una aplicación web que utiliza aprendizaje automático para clasificar animales capturados en trampas fotográficas. El objetivo principal del proyecto es ayudar a investigadores y conservacionistas a identificar y clasificar animales en la naturaleza, utilizando una aplicación web que les permite cargar imágenes y obtener los resultados de clasificación.</p><h3>Rol</h3><p>Colaboré en el desarrollo del backend de la aplicación web para la clasificación de imágenes de trampas fotográficas. Mi principal función incluyó generar y validar conjuntos de datos con datos de clientes, entrenar varias versiones del modelo de clasificación para obtener resultados óptimos y desarrollar el backend del sistema. Esto abarcó desde programar una base de datos hasta construir puntos finales esenciales, expuestos mediante APIs, como el registro y autenticación de usuarios, la gestión de proyectos y fotos, y la reclasificación de especies. El sistema se implementó en un servidor en la nube, priorizando la optimización de costo-beneficio de la arquitectura del servidor.</p>",
+        "links": {
+            "news": "Click aquí para conocerlos",
+            "video":"¡Mira el video de presentación!"
+        }
+    },
+    "cenfoteco": {
+        "subtitle": "Proyecto de Juego Estratégico",
+        "short-description": "Videojuego desarrollado para el curso de Programación de Patrones en la Universidad Cenfotec.",
+        "description": "<h3>Acerca de</h3><p>Durante 2022, desarrollé un juego estratégico para el curso de Patrones de Programación en la Universidad Cenfotec. El juego fue desarrollado en Java, utilizando patrones de diseño. El juego fue desarrollado en equipo y lo presentamos en la MakerFaire 2023 en la Universidad Cenfotec.</p><h3>Rol</h3><p>Mi principal función fue desarrollar algunas de las mecánicas del juego. También estuve a cargo de la documentación del juego y los sprites de los personajes.</p>"
+    },
+    "horus": {
+        "subtitle": "Proyecto de Reconocimiento de Placas Vehiculares",
+        "short-description": "Proyecto de detección de objetos para reconocer placas de matrícula en vehículos costarricenses.",
+        "description": "<h3>Acerca de</h3><p>Actualmente, estoy desarrollando un sistema de reconocimiento de placas de vehículos para la Universidad Cenfotec, aprendiendo sobre redes neuronales y visión por computadora con Python y algoritmos YOLO.</p><h3>Rol</h3><p>Como parte de este proyecto, estoy aprendiendo sobre investigación académica escribiendo un artículo de investigación sobre los descubrimientos y el proceso del proyecto.</p>"
+    },
+    "mobydyg-1": {
+        "subtitle": "Portal Web de Comercio Electrónico",
+        "short-description": "Módulo de usuario para una startup costarricense de comercio electrónico.",
+        "description": "<h3>Acerca de</h3><p>Durante 2022, creé portales web de comercio electrónico responsivos para MobyDyg, una startup costarricense de comercio electrónico, utilizando el framework Angular con Typescript, AWS (Cognito, Lambda, Amplify, SDK), MySQL y Git/GitHub como VCS. ¡Trabajé en equipo y en programación en pareja!</p><h3>Rol</h3><p>Una de mis principales tareas en MobyDyg fue crear el sistema de gestión de usuarios para el personal de las tiendas, a través de una parte del sistema llamada Backoffice. Me encargué de codificar y depurar todas las pantallas que prototipé. Para esta tarea, utilicé Figma y codifiqué en Typescript y Angular. Para el backend se utilizó el servicio AWS Cognito, y las bibliotecas Amplify y AWS SDK.</p><p>Me encargué de conectar las funcionalidades del frontend, como inicio de sesión, registro, inicio de sesión, recuperación de contraseña y otras, a los servicios en la nube de AWS.</p><p>También se aplicaron estas funcionalidades a la interfaz de las tiendas para permitir a los clientes iniciar sesión y mantener sus artículos en un carrito en la nube.</p>"
+    },
+    "mobydyg-2": {
+        "subtitle": "Rediseño de Base de Datos para Comercio Electrónico",
+        "short-description": "Rediseño de base de datos para una startup costarricense de comercio electrónico.",
+        "description": "<h3>Acerca de</h3><p>Durante 2022, estuve involucrado en la reconstrucción de la base de datos de comercio electrónico para MobyDyg, una startup costarricense de comercio electrónico. La antigua base de datos no cumplía con las reglas de normalización para bases de datos relacionales, además de una migración a una nueva arquitectura que resultó en la necesidad de una nueva estructura de base de datos. Fue necesario recrear la totalidad de la base de datos para lograr la visión y funcionalidad del sistema.</p><h3>Rol</h3><p>Mi principal función fue crear la estructura de la base de datos y las relaciones entre las tablas. También creé el diagrama de la base de datos y la documentación correspondiente. Utilicé MySQL Workbench y DBeaver para crear la base de datos y el diagrama, así como para generar la documentación.</p><p>Una vez creada la base de datos, me encargué de la migración de los datos desde la antigua base de datos a la nueva. Utilicé DBeaver para crear el script de migración y ejecutarlo.</p>"
+    },
+    "brand-book": {
+        "subtitle": "Proyecto de Marca Personal",
+        "short-description": "Descubre mi libro de marca personal y el trabajo detrás de él.",
+        "description": "<h3>Acerca de</h3><p>Mi libro de marca personal es un proyecto que creé para permitirme firmar todo el trabajo que produzco y sentirme orgulloso. Es 100% creado por mí e inspirado en las estrellas.</p><p>Aunque no soy diseñador, creé el libro de marca desde cero. Diseñé el logotipo, la paleta de colores y las ilustraciones. También creé el diseño y el contenido del libro.</p>",
+        "links": {
+            "download": "Click aquí para ver el libro completo"
+        }
+    },
+    "crafting-to-dos": {
+        "subtitle": "Proyecto de Frontend con React",
+        "short-description": "Desarrollado con React y JavaScript (JSX) para organizar tus tareas.",
+        "description": "<h3>Acerca de</h3><p>Crafting To Do's es una aplicación creada con React y JavaScript (JSX) que te permite organizar tus tareas. Es una aplicación de frontend que utiliza almacenamiento local para los to-dos. El diseño está basado en mi Libro de Marca Personal. ¡Échale un vistazo!</p>",
+        "links": {
+            "live": "Haz clic aquí para probarlo en vivo!",
+            "github": "¡Echa un vistazo al repositorio en GitHub!"
+        }
+    },
+    "tournament-app": {
+        "subtitle": "Proyecto de 3Pillar Global",
+        "short-description": "Una aplicación web para la gestión de torneos para la Federación Costarricense de Taekwondo.",
+        "description": "<h3>Acerca de</h3><p> Durante una pasantía en 3Pillar, fui asignado a un proyecto para la Federación Costarricense de Taekwondo. Mis principales actividades fueron prototipar maquetas en Figma para una aplicación web receptiva y llevarlas a cabo utilizando React.js, C#, ASP .NET MVC y SQL Server. ¡Trabajé como compañero de equipo en programación en pareja!</p><h3>papel</h3><p> Mis compañeros y yo colaboramos para crear dos versiones de un prototipo en Figma para la aplicación. Diseñamos dos prototipos, móvil y de escritorio. El diseño se realizó basado en un sistema de diseño previamente creado.</p><p> Como colaborador del equipo, ayudé con la creación del sistema de base de datos para la aplicación y la codificación de algunas de las funcionalidades del back-end y del front-end.</p>"
+    },
+    "atlas": {
+        "subtitle": "Proyecto de Graduación de Secundaria",
+        "short-description": "Una aplicación web para workaholics para gestionar su tiempo y tareas durante el confinamiento por COVID-19.",
+        "description": "<h3>Acerca de</h3><p>Primera aplicación realizada con React como parte de un proyecto de graduación. Atlas fue una aplicación web que permitía a los profesionales hacer un seguimiento de los adictos al trabajo mientras trabajaban de forma remota durante el confinamiento por COVID-19.</p>",
+        "links": {
+            "docs": "Haz clic aquí para leer la documentación completa!"
+        }
+    },
+    "skem-club": {
+        "subtitle": "Proyecto de SkemClub",
+        "short-description": "Campaña de reactivación para SKEM Club, el primer club de innovación de secundaria en Costa Rica.",
+        "description": "<h3>Acerca de</h3><p> Durante 2020, creé ilustraciones, diseños y material artístico para diferentes campañas y proyectos como miembro de SKEM Club, el primer club de innovación de nivel de secundaria en Costa Rica.</p><p> En 2021, me uní al equipo administrativo de SKEM Club como parte del área de comunicación del club. Durante ese tiempo, ayudé a planificar la campaña de reactivación del club para 2021. Yo y otros miembros del equipo nos encargamos de crear fechas de entrega, horarios y publicaciones publicitarias para las redes sociales de SKEM Club. Mi papel principal fue planificar los horarios y organizar el calendario para que el equipo siguiera, también proponiendo e intercambiando ideas para la campaña.</p>"
+    },
+    "wonder": {
+        "subtitle": "Proyecto Ganador de Expotec",
+        "short-description": "Videojuego y página web con el objetivo de educar a los niños sobre problemas sociales, globales y ambientales.",
+        "description": "<h3>Acerca de</h3><p>Proyecto ganador en la feria Expotec: Ciencia, Ingeniería y Arte 2019. Wonder fue un videojuego y una página web con el objetivo de educar a los niños sobre problemas sociales, globales y ambientales. Sus enseñanzas forman parte de los Objetivos de Desarrollo Sostenible promovidos por las Naciones Unidas (ONU).</p><p>Como proyecto grupal, contribuí principalmente a la página web y también al material artístico para promover el juego en redes sociales y en los edificios de la escuela secundaria.</p><h3>Premios</h3><ul><li>Segundo lugar en Desarrollo de Software en el Instituto Técnico Profesional Don Bosco.</li><li>Ganador del mejor proyecto en la categoría de arte en el Instituto Técnico Profesional Don Bosco.</li><li>Reconocimiento especial en desarrollo de software.</li><li>Reconocimiento del Istmo de Costa Rica por una propuesta para resolver problemas actuales como el calentamiento global.</li></ul>",
+        "links": {
+            "docs": "Lee la documentación en línea",
+            "instagram": "¡Lee más sobre el proyecto en Instagram!"
+        }
+    }
+}

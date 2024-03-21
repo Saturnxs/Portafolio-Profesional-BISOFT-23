@@ -1,0 +1,449 @@
+/********** FONTS **********/
+@font-face {
+  font-family: "Montserrat";
+  src: url("../assets/fonts/Montserrat-Medium.ttf") format("truetype");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../assets/fonts/Montserrat-SemiBold.ttf") format("truetype");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../assets/fonts/Montserrat-Bold.ttf") format("truetype");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../assets/fonts/Montserrat-ExtraBold.ttf") format("truetype");
+  font-weight: 900;
+}
+
+/********** GLOBAL STYLES **********/
+:root {
+  --pink-diamond: #e673fc;
+  --deep-space: #292544;
+  --glow-effect: drop-shadow(0 0 0.55rem rgb(229, 115, 252))
+    drop-shadow(0 0 0.55rem rgb(229, 115, 252));
+  --svg-white-to-pink: brightness(0) saturate(100%) invert(76%) sepia(67%)
+    saturate(5263%) hue-rotate(235deg) brightness(100%) contrast(110%);
+  background-color: var(--deep-space);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--deep-space);
+  font-family: "Montserrat", sans-serif;
+}
+
+.main-content {
+  background-color: var(--deep-space);
+  background-image: url("../assets/img/SPA.jpg");
+  background-repeat: no-repeat;
+  background-position: 100% 100vh;
+  background-size: cover;
+}
+
+h1 {
+  font-weight: 900;
+}
+
+h2 {
+  font-weight: 700;
+}
+
+.sticky-top {
+  background: none;
+  transition: background 0.3s ease-in-out;
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--pink-diamond) transparent; /* Color de la barra */
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--pink-diamond);
+  border-radius: 10px; /* Extremos redondeados */
+}
+
+::-webkit-scrollbar-button {
+  display: none;
+}
+
+.scroll-to-top {
+  background-color: transparent !important;
+  width: 50px !important;
+  height: 50px !important;
+  border-radius: 50% !important;
+  border: 3px solid #fff !important;
+  z-index: 1 !important;
+}
+
+.floating-animation {
+  transform: translateY(-10%);
+  animation: floater 2s infinite;
+  transition: ease 0.9s;
+}
+
+@keyframes floater {
+  0% {
+    transform: translateY(-10%);
+    transition: ease 0.9s;
+  }
+  50% {
+    transform: translateY(10%);
+    transition: ease 0.9s;
+  }
+}
+
+.to-white-filter {
+  filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(0%)
+    hue-rotate(0deg) brightness(100%) contrast(100%);
+}
+
+/********** TEXT COLORS **********/
+.color-pink-diamond {
+  color: var(--pink-diamond);
+}
+
+.color-deep-space {
+  color: var(--deep-space);
+}
+
+.color-svg-white-to-pink {
+  filter: var(--svg-white-to-pink);
+}
+
+/********** BACKGROUND COLORS **********/
+.bg-pink-diamond {
+  background-color: var(--pink-diamond);
+}
+
+.bg-deep-space {
+  background-color: var(--deep-space);
+}
+
+.bg-degradado {
+  background: linear-gradient(
+    to bottom,
+    rgba(41, 37, 68, 1) 0%,
+    rgba(41, 37, 68, 0.95) 45%,
+    rgba(41, 37, 68, 0.9) 55%,
+    rgba(41, 37, 68, 0.85) 65%,
+    rgba(41, 37, 68, 0.8) 70%,
+    rgba(41, 37, 68, 0) 100%
+  );
+}
+
+.bg-glassmorphism {
+  background: rgba(41, 37, 68, 0.4) !important;
+  backdrop-filter: blur(40px);
+  -webkit-backdrop-filter: blur(40px);
+}
+
+.bg-glassmorphism-light {
+  backdrop-filter: blur(10px) saturate(180%);
+  -webkit-backdrop-filter: blur(11px) saturate(180%);
+  background-color: rgba(255, 255, 255, 0.3);
+  border: 1px solid rgba(209, 213, 219, 0);
+}
+
+/********** CUSTOM **********/
+.fw-bolder {
+  font-weight: 900;
+}
+
+.light-on {
+  filter: var(--glow-effect);
+  transition: filter 0.2s ease-in-out;
+}
+
+.hover-light-on {
+  transition: filter 0.2s ease-in-out;
+}
+
+.hover-light-on:hover {
+  filter: var(--glow-effect);
+}
+
+.body-icons {
+  width: 70px;
+}
+
+.menu-icons {
+  width: 30px;
+}
+
+.border-radious-20 {
+  border-radius: 20px;
+}
+
+.btn-none {
+  background-color: transparent;
+  border: none;
+}
+
+.button-white-to-pink {
+  background-color: transparent;
+  border-radius: 15px;
+  font-weight: 700;
+  border: 3px solid #fff;
+  color: #fff;
+  transition-duration: 0.3s;
+  transition-property: border-color, color, background-color, filter;
+  padding: 0.5rem 1.2rem;
+}
+
+.button-white-to-pink:hover,
+.button-white-to-pink:focus,
+.button-white-to-pink:focus-visible {
+  border-color: var(--pink-diamond);
+  color: var(--pink-diamond);
+  filter: var(--glow-effect);
+  background-color: transparent;
+  box-shadow: none;
+  outline: none;
+}
+
+.button-pink-to-white {
+  background-color: transparent;
+  border-radius: 15px;
+  font-weight: 700;
+  border: 3px solid var(--pink-diamond);
+  color: var(--pink-diamond);
+  transition-duration: 0.3s;
+  transition-property: border-color, color, background-color, filter;
+  padding: 0.5rem 1.2rem;
+}
+
+.button-pink-to-white:hover,
+.button-pink-to-white:focus,
+.button-pink-to-white:focus-visible {
+  border-color: #fff;
+  color: #fff;
+  filter: var(--glow-effect);
+  background-color: transparent;
+  box-shadow: none;
+  outline: none;
+}
+
+/********** HEADER **********/
+.modal-menu-mobile {
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.modal-menu-mobile-active {
+  visibility: visible;
+  opacity: 1;
+  transition: all 0.3s ease-in-out;
+}
+
+#navbarTop .active {
+  filter: var(--glow-effect);
+}
+
+.fixed-header {
+  position: fixed;
+}
+
+.img-navbar {
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+/********** ABOUT ME **********/
+.about-me-image-container {
+  width: 70%;
+  height: 40vh;
+}
+
+.about-me-image-container .main-image {
+  background-image: url("/src/assets/img/profile-pic.jpg");
+  background-size: cover;
+  background-position: top center;
+}
+
+.about-me-image-container .main-image-frame {
+  border: 5px solid #fff;
+  position: relative;
+  transform: translate(10%, -90%);
+}
+
+.typed {
+  height: 8rem;
+}
+
+/********** PROJECTS **********/
+.immersive-card-background {
+  width: 200%;
+  transform: translateX(-25%) translateY(-10%);
+  opacity: 0.9;
+  filter: blur(25px);
+}
+
+.immersive-card-gradient {
+  background: linear-gradient(
+    to bottom,
+    rgba(41, 37, 68, 0.4) 20%,
+    rgba(41, 37, 68, 0.5) 40%,
+    rgba(41, 37, 68, 0.9) 100%
+  );
+}
+
+.immersive-card-content img {
+  height: 25vh;
+  box-shadow: 0 0 30px 0px rgba(0, 0, 0, 0.3);
+}
+
+.project-card {
+  transition: all 0.3s ease-in-out;
+}
+
+.project-card:hover {
+  padding: 0 !important;
+  cursor: pointer;
+}
+
+/********** PROJECTS MODAL **********/
+.modal-project {
+  min-height: 100vh;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+.modal-project .info-div {
+  height: 73vh;
+  overflow-y: auto;
+}
+
+.image-gallery-main-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+#thumbnails-modal-splide .splide__slide {
+  border: none !important;
+  opacity: 0.3;
+}
+
+#thumbnails-modal-splide .splide__slide.is-active {
+  opacity: 1;
+  transition: all 0.2s ease-in-out;
+}
+
+#thumbnails-modal-splide .splide__arrow {
+  background-color: transparent;
+  transition: all 0.3s ease-in-out;
+  height: 100%;
+  width: 2.5rem;
+}
+
+#thumbnails-modal-splide .splide__arrow:hover {
+  filter: var(--glow-effect);
+}
+
+#thumbnails-modal-splide .splide__arrow svg {
+  width: 100%;
+  height: 100%;
+  fill: var(--pink-diamond) !important;
+}
+
+.image-gallery-thumbnails {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/********** CONTACT **********/
+.contact-form {
+  border-radius: 20px;
+}
+
+.contact-form .form-floating > .form-control-plaintext ~ label::after,
+.form-floating > .form-control:focus ~ label::after,
+.form-floating > .form-control:not(:placeholder-shown) ~ label::after,
+.form-floating > .form-select ~ label::after {
+  background-color: transparent;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: var(--pink-diamond);
+  box-shadow: none;
+  color: #fff;
+}
+
+.contact-form input:hover,
+.contact-form textarea:hover {
+  border-color: #fff;
+  color: #fff;
+  transition: border-color 0.3s ease-in-out, color 0.3s ease-in-out,
+    background-color 0.3s ease-in-out, filter 0.3s ease-in-out;
+}
+
+.contact-form input:hover,
+.contact-form textarea:hover {
+  border-color: var(--pink-diamond);
+  color: var(--pink-diamond);
+  filter: var(--glow-effect);
+  background-color: transparent;
+}
+
+.contact-form .alert-message {
+  transition: all 0.3s ease-in-out;
+}
+
+.contact-form .alert-message svg {
+  cursor: pointer;
+}
+
+/********** RESPONSIVE **********/
+@media screen and (max-width: 768px) {
+  .body-icons {
+    width: 50px;
+  }
+
+  .scroll-to-top {
+    bottom: 25px !important;
+    right: 25px !important;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .typed {
+    height: 11rem;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .modal-project {
+    overflow-y: auto;
+    height: 100%;
+  }
+
+  .modal-project .info-div {
+    overflow-y: hidden;
+    height: 100%;
+  }
+}

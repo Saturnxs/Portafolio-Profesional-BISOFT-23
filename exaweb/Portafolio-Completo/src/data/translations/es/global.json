@@ -1,0 +1,81 @@
+{
+    "cover":{
+        "hello":"¡Hola Mundo!",
+        "subtitle":"Mi nombre es <pink>Thomas</pink>",
+        "scroll":"Te invito a conocer mi perfil profesional y mis proyectos. <pink>Desplázate hacia abajo</pink> para comenzar."
+    },
+    "navbar":{
+        "home":"Inicio",
+        "about":"Sobre mí",
+        "stack":"Tecnologías",
+        "projects":"Proyectos",
+        "contact":"Contacto"
+    },
+    "about-me":{
+        "hi":"¡Hola!",
+        "im":"Soy",
+        "typed-strings": [
+            "un Apasionado del Aprendizaje de Máquina"
+        ],
+        "description-1": "Como <pink>desarrollador</pink>, construyo aplicaciones principalmente orientadas a servicios web utilizando tecnologías como Bootstrap y React. Como <pink>profesional</pink>, fomento la excelencia a través de buenas prácticas y mejora continua, considerándome una persona con gran atención al detalle y cuidando la artesanía en todo lo <pink>codificado</pink>, <pink>diseñado</pink> y <pink>producido</pink> por mí.",
+        "description-2": "Y como <pink>humano</pink>, creo que el cambio social se puede lograr difundiendo la ciencia y la educación, siendo la tecnología la clave del éxito en este camino. Por eso, me esfuerzo por ser un <pink>aprendiz</pink> constante, un <pink>colaborador</pink> activo y un <pink>creador</pink> de soluciones innovadoras.",
+        "excellence": "Abrazando la <pink>excelencia</pink> en",
+        "expectations": "Desafiando <pink>expectativas</pink> en"
+    },
+    "stack":{
+        "intro": "Algunas tecnologías y herramientas que utilizo en mi día a día para <pink>codificar</pink>, <pink>diseñar</pink> y <pink>crear</pink>.",
+        "frontend": "Frontend",
+        "backend": "Backend",
+        "database": "Base de datos",
+        "ml": "ML y Visión Computacional",
+        "cloud": "Nube y CMS",
+        "version": "Control de versiones",
+        "design": "Diseño y prototipado"
+    },
+    "projects":{
+        "intro": "Algunos proyectos en los que he estado involucrado, relacionados con <pink>código</pink>, <pink>diseño</pink> y <pink>producción</pink>.",
+        "button": "ver más",
+        "button-close": "cerrar todo",
+        "stack": "Tecnologías",
+        "explore": "Explora"
+    },
+    "contact":{
+        "intro": "Consulta mi <pink>información de contacto</pink> y <pink>redes sociales</pink>, ¡no dudes en ponerte en contacto conmigo!",
+        "contact-info": {
+            "github":{
+                "title":"Checa mi código en GitHub!"
+            },
+            "linkedin":{
+                "title":"¡Conectemos en LinkedIn!"
+            },
+            "email":{
+                "title":"¿Quieres ayuda con tu proyecto?",
+                "mobile-variant":"¡Envíame un correo!"
+            },
+            "whatsapp":{
+                "title":"¿Quieres saludarme?"
+            },
+            "cv":{
+                "title":"¿Buscas mi currículum?",
+                "url":"ThomasBM-CV-ES.pdf"
+            }
+        },
+        "contact-form": {
+            "name": "¿Cuál es tu nombre?",
+            "email": "¿Y tu correo electrónico?",
+            "subject": "¿Qué tienes en mente?",
+            "message": "Cuéntame más al respecto...",
+            "submit": "envíame un mensaje",
+            "alerts": {
+                "success": "He recibido tu mensaje, ¡me pondré en contacto contigo pronto!",
+                "error": "Hubo un error al enviar tu mensaje, ¡por favor inténtalo de nuevo más tarde!",
+                "empty": "¡Por favor completa todos los campos!", 
+                "invalid-email": "Por favor ingresa un correo electrónico válido!"
+            }
+        }
+    },    
+    "footer":{
+        "crafted-1": "Creado con",
+        "crafted-2": "por <github>@Saturnxs</github>"
+    }
+}
